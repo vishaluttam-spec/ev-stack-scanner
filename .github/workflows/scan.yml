@@ -1,0 +1,60 @@
+name: line-scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    # All times UTC. Pacific = UTC-7 (PDT) / UTC-8 (PST).
+    # --- NFL Sunday: 8am-9pm PT, every 10 min
+    - cron: "*/10 15-23 * * 0"
+    - cron: "*/10 0-4 * * 1"
+    # --- Thursday night: 4:30-9pm PT
+    - cron: "*/10 23 * * 4"
+    - cron: "*/10 0-4 * * 5"
+    # --- Monday night: 4:30-9pm PT
+    - cron: "*/10 23 * * 1"
+    - cron: "*/10 0-4 * * 2"
+    # --- Saturday college: 9am-9pm PT, every 20 min
+    - cron: "*/20 16-23 * * 6"
+    - cron: "*/20 0-4 * * 0"
+    # --- Daily baselines: 7am and 5pm PT (feeds Friday shortlist / CLV audit)
+    - cron: "0 14 * * *"
+    - cron: "0 0 * * *"
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+
+      - name: Discover Telegram chat id (first run only)
+        id: chat
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python bootstrap_chat.py
+
+      - name: Scan lines
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ steps.chat.outputs.chat_id }}
+        run: python scanner.py
+
+      - name: Commit data
+        run: |
+          git config user.name "ev-stack-bot"
+          git config user.email "bot@evstack.local"
+          git add data
+          git diff --cached --quiet || git commit -m "scan $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          git push
