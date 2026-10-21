@@ -56,6 +56,37 @@ def load_json(path, default):
         return default
 
 
+def full(bookmakers, market, home):
+    """{book: {"point": home/over point, "a": home/over price, "b": away/under price}}"""
+    out = {}
+    for bk in bookmakers:
+        for m in bk.get("markets", []):
+            if m["key"] != market:
+                continue
+            d = {}
+            for o in m["outcomes"]:
+                first = (o["name"] == home) if not market.startswith("totals") else (o["name"] == "Over")
+                if first:
+                    d["a"] = o.get("price")
+                    if "point" in o:
+                        d["point"] = float(o["point"])
+                else:
+                    d["b"] = o.get("price")
+            out[bk["key"]] = d
+    return out
+
+
+def implied(am):
+    return 100 / (am + 100) if am > 0 else -am / (-am + 100)
+
+
+def no_vig(a, b):
+    if a is None or b is None:
+        return None
+    pa, pb = implied(a), implied(b)
+    return round(100 * pa / (pa + pb), 1)
+
+
 def extract(bookmakers, market, home):
     """{book: (point, price_home_or_over)}"""
     out = {}
@@ -125,10 +156,13 @@ def main():
                     markets += [("1H", "spread", "spreads_h1"), ("1H", "total", "totals_h1")]
                 except requests.HTTPError:
                     pass
-            rec["markets"]["ml"] = {b: p for b, (_, p) in extract(bks, "h2h", home).items()}
+            rec["note"] = "a = home side (or Over) price, b = away side (or Under) price; points are home/over"
+            rec["markets"]["ml"] = full(bks, "h2h", home)
+            pin = rec["markets"]["ml"].get(SHARP, {})
+            rec["pinnacle_fair_home_cents"] = no_vig(pin.get("a"), pin.get("b"))
             for period, mname, key in markets:
                 lines = extract(bks, key, home)
-                rec["markets"][f"{period}_{mname}"] = {b: pt for b, (pt, _) in lines.items()}
+                rec["markets"][f"{period}_{mname}"] = full(bks, key, home)
                 sharp = lines.get(SHARP)
                 if sharp is None:
                     continue
