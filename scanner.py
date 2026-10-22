@@ -104,6 +104,49 @@ def extract(bookmakers, market, home):
     return out
 
 
+BOOK_NAMES = {"pinnacle": "Pinnacle", "bovada": "Bovada", "betonlineag": "BetOnline",
+              "lowvig": "LowVig", "mybookieag": "MyBookie", "betus": "BetUS",
+              "draftkings": "DraftKings", "fanduel": "FanDuel", "betmgm": "BetMGM"}
+
+
+def bname(key):
+    return BOOK_NAMES.get(key, key)
+
+
+def pt_kick(kick):
+    """Kickoff as Pacific time, e.g. 'Sat 12:30 PM PT'. Handles PDT/PST without tz libs."""
+    # PDT runs 2nd Sun Mar -> 1st Sun Nov; close enough for football season to check month/day.
+    y = kick.year
+    mar = datetime(y, 3, 8, 10, tzinfo=timezone.utc)
+    mar += timedelta(days=(6 - mar.weekday()) % 7)
+    nov = datetime(y, 11, 1, 9, tzinfo=timezone.utc)
+    nov += timedelta(days=(6 - nov.weekday()) % 7)
+    off = -7 if mar <= kick < nov else -8
+    local = kick + timedelta(hours=off)
+    return local.strftime("%a %-I:%M %p") + " PT"
+
+
+def until(mins):
+    if mins < 90:
+        return f"in {round(mins)} min"
+    h = mins / 60
+    return f"in {h:.0f} hrs" if h < 48 else f"in {h / 24:.1f} days"
+
+
+def fmt_spread(team, pt):
+    return f"{team} {pt:+g}" if pt else f"{team} PK"
+
+
+def describe(mname, home, away, sharp_pt, soft_pt):
+    """Plain-English value side at the soft book. Points are home-side (spread) or the total."""
+    if mname == "total":
+        return f"OVER {soft_pt:g}" if soft_pt < sharp_pt else f"UNDER {soft_pt:g}"
+    # spread: home point. Lower (more negative) at soft book = soft book overrates home -> take away.
+    if soft_pt < sharp_pt:
+        return fmt_spread(away, -soft_pt)
+    return fmt_spread(home, soft_pt)
+
+
 def crosses_key(a, b):
     lo, hi = sorted((abs(a), abs(b)))
     return lo != hi and any(lo <= k <= hi for k in KEY)
@@ -141,7 +184,7 @@ def main():
             label = f"{away} @ {home}"
             kick = datetime.fromisoformat(g["commence_time"].replace("Z", "+00:00"))
             mins_to_kick = (kick - now).total_seconds() / 60
-            if mins_to_kick < -30:          # already well underway
+            if mins_to_kick <= 0:           # started: books are posting live lines, not comparable
                 continue
             bks = g.get("bookmakers", [])
             rec = {"league": league, "game": label, "home": home, "away": away,
@@ -166,6 +209,7 @@ def main():
                 sharp = lines.get(SHARP)
                 if sharp is None:
                     continue
+                hits, fresh = [], False
                 for book in SOFT:
                     if book not in lines:
                         continue
@@ -177,12 +221,29 @@ def main():
                            round(gap, 1), gr, round(mins_to_kick)]
                     signals.append(row)
                     sid = f"{label}|{period}|{mname}|{book}"
-                    if gr.startswith("ACTION") and alerted.get(sid) != soft:
-                        alerted[sid] = soft
-                        side = "home" if mname == "spread" else "over"
-                        alerts.append(
-                            f"{gr} {league} {label}\n{period} {mname}: Pinnacle {sharp[0]:+g} "
-                            f"vs {book} {soft:+g} (gap {gap:g})\nkick in {round(mins_to_kick)} min")
+                    if gr.startswith("ACTION"):
+                        hits.append((gap, book, soft))
+                        if alerted.get(sid) != soft:
+                            alerted[sid] = soft
+                            fresh = True
+                if fresh:
+                    hits.sort(reverse=True)
+                    gap, book, soft = hits[0]
+                    half = "1st half " if period == "1H" else ""
+                    if mname == "spread":
+                        sharp_txt = fmt_spread(home, sharp[0])
+                        others = ", ".join(f"{bname(b)} {s:+g}" for _, b, s in hits)
+                    else:
+                        sharp_txt = f"{sharp[0]:g}"
+                        others = ", ".join(f"{bname(b)} {s:g}" for _, b, s in hits)
+                    early = ("\nEarly — recheck 60–90 min before kick." if mins_to_kick > 24 * 60 else "")
+                    alerts.append(
+                        f"{league} {label}\n"
+                        f"Kick: {pt_kick(kick)} ({until(mins_to_kick)})\n"
+                        f"{half}{mname.upper()}: sharp (Pinnacle) {sharp_txt} | {others}\n"
+                        f"➡️ Value side: {describe(mname, home, away, sharp[0], soft)} "
+                        f"at {bname(book)} ({gap:g}-pt gap)"
+                        f"{early}")
             snapshot["games"].append(rec)
 
     # ---- write outputs
@@ -203,7 +264,8 @@ def main():
     for s in signals:
         print(" ", s[9], s[1], s[2], s[3], s[4], "pinn", s[5], s[6], s[7])
     if alerts:
-        telegram("🚨 EV Stack line alert\n\n" + "\n\n".join(alerts[:8]))
+        telegram("🚨 EV Stack line alert\n(signal only — confirm on Kalshi before trading)\n\n"
+                 + "\n\n".join(alerts[:8]))
     if remaining and int(remaining) < 1500:
         telegram(f"⚠️ Odds API credits low: {remaining} left this month")
 
