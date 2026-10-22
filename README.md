@@ -18,3 +18,8 @@ Each scan also pulls Kalshi's football contracts (NFL + college: game winner, sp
 - Telegram "KALSHI price edge" alert: 🟢 ACTION 5¢+, 🟡 ALERT 4¢, only for rungs within 3 pts of Pinnacle's line, price 10–90¢, 25+ contracts offered; re-alerts only if the edge grows 2¢+
 - Model check (Oct 21, 2026): within ~1¢ of Kalshi mid-prices near the line, no directional bias
 - Public market data only — no Kalshi account, key, or orders. Price check (d) only; trades still need the full protocol.
+
+## Odds mismatch + "both agree" (added Oct 21, 2026)
+
+- **Odds mismatch:** when a book posts the same number as Pinnacle (spread, total, or who-wins) but its odds beat Pinnacle's no-margin price by 3+ win-% points, it is logged to `data/price_signals.csv` and sent as a "💲 ODDS mismatch" Telegram alert.
+- **Both agree:** each game in `latest.json` carries `book_value` (sportsbook point gaps and odds mismatches with their side). When a Kalshi edge points to the same side, the Kalshi alert is tagged "✅ BOTH AGREE", listed first, and `kalshi.json` records it under `confirmed_by`.

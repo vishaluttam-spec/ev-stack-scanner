@@ -441,6 +441,16 @@ def run(snapshot, now, pt_kick, until):
                     p["contract"] = m.get("title") or f"{label} wins"
                 priced.append(p)
 
+                # ---- does a sportsbook gap point the same way? ("both agree")
+                if kind == "total":
+                    kdir = "over" if p["best_side"] == "YES" else "under"
+                else:
+                    kdir = side if p["best_side"] == "YES" else ("away" if side == "home" else "home")
+                p["direction"] = kdir
+                p["confirmed_by"] = [b["text"] for b in g.get("book_value", [])
+                                     if b["period"] == period and b["side"] == kdir
+                                     and (b["market"] == kind
+                                          or (kind == "winner" and b["market"] == "spread"))][:3]
                 gr = grade(p["best_edge_c"])
                 near = dist is None or dist <= NEAR_LINE
                 tradeable = (MIN_PRICE <= p["best_ask"] <= MAX_PRICE
@@ -487,18 +497,21 @@ def run(snapshot, now, pt_kick, until):
         print("  unmatched:", "; ".join(out["unmatched"][:15]))
 
     # ---- alert text
-    alerts.sort(key=lambda a: -a[0])
+    alerts.sort(key=lambda a: (not a[5].get("confirmed_by"), -a[0]))
     blocks = []
     for edge, lg, g, kick, mins, p in alerts:
         half = "1st half " if p["period"] == "1H" else ""
         what = {"winner": "who wins", "spread": f"{half}spread", "total": f"{half}total"}[p["kind"]]
         early = "\nEarly — recheck 60–90 min before kick." if mins > 24 * 60 else ""
         blocks.append(
-            f'{"🟢 ACTION" if edge >= ACTION_C else "🟡 ALERT"} {lg} {g["game"]}\n'
+            f'{"🟢 ACTION" if edge >= ACTION_C else "🟡 ALERT"}'
+            f'{" ✅ BOTH AGREE" if p.get("confirmed_by") else ""} {lg} {g["game"]}\n'
             f"Kick: {pt_kick(kick)} ({until(mins)}) · {what}\n"
             f"BUY {p['best_side']} on \"{p['contract']}\" at {cents(p['best_ask'])} or less\n"
             f"({means(p, g['home'], g['away'])})\n"
             f"Fair {p['best_fair'] * 100:.1f}¢ (Pinnacle) · fee {cents(p['best_fee'])} · "
             f"edge {edge:g}¢ · {int(p['best_size']):,} contracts offered\n"
-            f"Ticker {p['ticker']}{early}")
+            f"Ticker {p['ticker']}"
+            + ("".join(f"\n✅ Also value: {t}" for t in p.get("confirmed_by", [])))
+            + early)
     return blocks

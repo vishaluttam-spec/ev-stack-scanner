@@ -23,6 +23,8 @@ SOFT = ["bovada", "betonlineag", "lowvig", "mybookieag", "betus", "draftkings", 
 ACTION, WATCH = 1.5, 1.0
 KEY = {3, 7}
 H1_WINDOW_MIN = 150
+PRICE_EDGE = 3.0          # odds mismatch: book odds beat Pinnacle fair by 3+ win-% points at the same number
+PRICE_SIGNALS = "data/price_signals.csv"
 DATA = "data"
 SIGNALS = f"{DATA}/signals.csv"
 LATEST = f"{DATA}/latest.json"
@@ -149,6 +151,55 @@ def describe(mname, home, away, sharp_pt, soft_pt):
     return fmt_spread(home, soft_pt)
 
 
+def am_odds(p):
+    """Win probability -> American odds string."""
+    if p <= 0 or p >= 1:
+        return "n/a"
+    return f"{-round(100 * p / (1 - p))}" if p >= 0.5 else f"+{round(100 * (1 - p) / p)}"
+
+
+def fmt_am(x):
+    return f"+{x}" if x > 0 else f"{x}"
+
+
+def price_mismatches(rec, period, mname, mkt):
+    """Same number as Pinnacle, better odds than Pinnacle's no-margin price.
+    Returns [(edge_pct, book, side, point, odds, fair_p)] where side is home/away/over/under."""
+    pin = mkt.get(SHARP)
+    if not pin or pin.get("a") is None or pin.get("b") is None:
+        return []
+    pa, pb = implied(pin["a"]), implied(pin["b"])
+    fair = {"a": pa / (pa + pb), "b": pb / (pa + pb)}
+    names = ("over", "under") if mname == "total" else ("home", "away")
+    out = []
+    for book in SOFT:
+        d = mkt.get(book)
+        if not d:
+            continue
+        if mname != "ml" and (d.get("point") is None or pin.get("point") is None
+                              or d["point"] != pin["point"]):
+            continue
+        for k, side in (("a", names[0]), ("b", names[1])):
+            if d.get(k) is None:
+                continue
+            edge = 100 * (fair[k] - implied(d[k]))
+            if edge >= PRICE_EDGE:
+                out.append((round(edge, 1), book, side, d.get("point"), d[k], fair[k]))
+    return out
+
+
+def side_text(rec, mname, side, point):
+    """Plain wording for a bet side at a given home/over point."""
+    home, away = rec["home"], rec["away"]
+    if mname == "total":
+        return f"{side.upper()} {point:g}"
+    team = home if side == "home" else away
+    if mname == "ml":
+        return f"{team} to win"
+    pt = point if side == "home" else -point
+    return fmt_spread(team, pt)
+
+
 def crosses_key(a, b):
     lo, hi = sorted((abs(a), abs(b)))
     return lo != hi and any(lo <= k <= hi for k in KEY)
@@ -173,6 +224,7 @@ def main():
     alerted = load_json(ALERTED, {})
     snapshot = {"scanned_at_utc": stamp, "games": []}
     signals, alerts, remaining = [], [], None
+    price_rows, price_alerts = [], []
 
     for sport, league in SPORTS.items():
         try:
@@ -202,6 +254,7 @@ def main():
                 except requests.HTTPError:
                     pass
             rec["note"] = "a = home side (or Over) price, b = away side (or Under) price; points are home/over"
+            rec["book_value"] = []
             rec["markets"]["ml"] = full(bks, "h2h", home)
             pin = rec["markets"]["ml"].get(SHARP, {})
             rec["pinnacle_fair_home_cents"] = no_vig(pin.get("a"), pin.get("b"))
@@ -225,6 +278,13 @@ def main():
                     sid = f"{label}|{period}|{mname}|{book}"
                     if gr.startswith("ACTION"):
                         hits.append((gap, book, soft))
+                        if mname == "total":
+                            vside = "over" if soft < sharp[0] else "under"
+                        else:
+                            vside = "away" if soft < sharp[0] else "home"
+                        rec["book_value"].append({"period": period, "market": mname, "side": vside,
+                                                  "book": book, "type": "points",
+                                                  "text": f"{describe(mname, home, away, sharp[0], soft)} at {bname(book)} ({gap:g}-pt gap)"})
                         if alerted.get(sid) != soft:
                             alerted[sid] = soft
                             fresh = True
@@ -246,6 +306,30 @@ def main():
                         f"➡️ Value side: {describe(mname, home, away, sharp[0], soft)} "
                         f"at {bname(book)} ({gap:g}-pt gap)"
                         f"{early}")
+            # ---- odds mismatch: same number as Pinnacle, better odds
+            checks = [("FG", "ml", "ml")] + [(p, m, f"{p}_{m}") for p, m, _ in markets]
+            for period, mname, mkey in checks:
+                for edge, book, side, point, odds, fp in price_mismatches(
+                        rec, period, mname, rec["markets"].get(mkey, {})):
+                    bet = side_text(rec, mname, side, point)
+                    price_rows.append([stamp, league, label, period, mname, book, bet,
+                                       odds, round(fp * 100, 1), edge, round(mins_to_kick)])
+                    rec["book_value"].append({"period": period,
+                                              "market": "winner" if mname == "ml" else mname,
+                                              "side": side, "book": book, "type": "odds",
+                                              "text": f"{bet} at {bname(book)} {fmt_am(odds)} (fair {am_odds(fp)})"})
+                    sid = f"{label}|{period}|{mname}|{book}|{side}|PRICE"
+                    if alerted.get(sid) is None or edge >= alerted[sid] + 2:
+                        alerted[sid] = edge
+                        half = "1st half " if period == "1H" else ""
+                        what = "WHO WINS" if mname == "ml" else mname.upper()
+                        early = ("\nEarly — recheck 60–90 min before kick." if mins_to_kick > 24 * 60 else "")
+                        price_alerts.append((edge,
+                            f"{league} {label}\n"
+                            f"Kick: {pt_kick(kick)} ({until(mins_to_kick)})\n"
+                            f"{half}{what}: same number as Pinnacle, better odds\n"
+                            f"➡️ Value side: {bet} at {bname(book)} {fmt_am(odds)} "
+                            f"(fair {am_odds(fp)}, {edge:g}% better){early}"))
             snapshot["games"].append(rec)
 
     # ---- Kalshi add-on: price Kalshi contracts against Pinnacle (never blocks the line scan)
@@ -266,9 +350,17 @@ def main():
             w.writerow(["time_utc", "league", "game", "period", "market", "pinnacle",
                         "book", "book_line", "gap", "grade", "mins_to_kick"])
         w.writerows(signals)
+    newp = not os.path.exists(PRICE_SIGNALS)
+    with open(PRICE_SIGNALS, "a", newline="") as f:
+        w = csv.writer(f)
+        if newp:
+            w.writerow(["time_utc", "league", "game", "period", "market", "book", "bet",
+                        "book_odds", "pinnacle_fair_pct", "edge_pct", "mins_to_kick"])
+        w.writerows(price_rows)
     with open(ALERTED, "w") as f:
         json.dump(alerted, f)
 
+    print(f"{len(price_rows)} odds mismatches, {len(price_alerts)} new odds alerts")
     print(f"{len(snapshot['games'])} games, {len(signals)} signals, "
           f"{len(alerts)} new alerts, credits remaining {remaining}")
     for s in signals:
@@ -276,6 +368,10 @@ def main():
     if alerts:
         telegram("🚨 EV Stack line alert\n(signal only — confirm on Kalshi before trading)\n\n"
                  + "\n\n".join(alerts[:8]))
+    if price_alerts:
+        price_alerts.sort(key=lambda a: -a[0])
+        telegram("💲 EV Stack ODDS mismatch\n(same number as Pinnacle, better odds — signal only)\n\n"
+                 + "\n\n".join(t for _, t in price_alerts[:8]))
     if kalshi_alerts:
         telegram("💰 EV Stack KALSHI price edge\n"
                  "(price check only — trade only on my TRADE or LEAN message)\n\n"
