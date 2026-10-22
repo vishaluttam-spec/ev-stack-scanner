@@ -8,6 +8,8 @@ Pinnacle = sharp reference. Flags soft-book deviations per Vishal's protocol:
 Full game every pass; first-half markets only for games kicking off within 150 min.
 Writes data/latest.json (full snapshot) and appends data/signals.csv.
 Sends Telegram alert for new ACTION flags.
+Kalshi add-on (kalshi.py): prices Kalshi contracts vs Pinnacle -> data/kalshi.json,
+data/kalshi_signals.csv, and a separate Telegram "KALSHI price edge" alert.
 """
 from __future__ import annotations
 import csv, json, os, sys, time
@@ -246,6 +248,14 @@ def main():
                         f"{early}")
             snapshot["games"].append(rec)
 
+    # ---- Kalshi add-on: price Kalshi contracts against Pinnacle (never blocks the line scan)
+    kalshi_alerts = []
+    try:
+        import kalshi
+        kalshi_alerts = kalshi.run(snapshot, now, pt_kick, until)
+    except Exception as e:
+        print("kalshi add-on error:", repr(e))
+
     # ---- write outputs
     with open(LATEST, "w") as f:
         json.dump(snapshot, f, indent=1)
@@ -266,6 +276,10 @@ def main():
     if alerts:
         telegram("🚨 EV Stack line alert\n(signal only — confirm on Kalshi before trading)\n\n"
                  + "\n\n".join(alerts[:8]))
+    if kalshi_alerts:
+        telegram("💰 EV Stack KALSHI price edge\n"
+                 "(price check only — trade only on my TRADE or LEAN message)\n\n"
+                 + "\n\n".join(kalshi_alerts[:8]))
     if remaining and int(remaining) < 1500:
         telegram(f"⚠️ Odds API credits low: {remaining} left this month")
 
