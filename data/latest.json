@@ -1,5 +1,5 @@
 {
- "scanned_at_utc": "2026-10-25T00:21:49+00:00",
+ "scanned_at_utc": "2026-10-25T00:25:26+00:00",
  "games": [
   {
    "league": "NFL",
@@ -363,7 +363,7 @@
      "fair_yes": 0.64,
      "yes_ask": 0.7,
      "no_ask": 0.31,
-     "yes_ask_size": 378658.59,
+     "yes_ask_size": 373987.59,
      "no_ask_size": 0.43,
      "edge_yes_c": -8.0,
      "fee_yes": 0.02,
@@ -390,8 +390,8 @@
      "fair_yes": 0.525,
      "yes_ask": 0.58,
      "no_ask": 0.43,
-     "yes_ask_size": 379403.46,
-     "no_ask_size": 310222.93,
+     "yes_ask_size": 453911.46,
+     "no_ask_size": 310147.93,
      "edge_yes_c": -7.5,
      "fee_yes": 0.02,
      "edge_no_c": 2.5,
@@ -400,7 +400,7 @@
      "best_edge_c": 2.5,
      "best_ask": 0.43,
      "best_fee": 0.02,
-     "best_size": 310222.93,
+     "best_size": 310147.93,
      "best_fair": 0.475,
      "kind": "total",
      "period": "FG",
@@ -789,7 +789,7 @@
      "fair_yes": 0.325,
      "yes_ask": 0.29,
      "no_ask": 0.72,
-     "yes_ask_size": 35012.58,
+     "yes_ask_size": 358702.69,
      "no_ask_size": 15156.0,
      "edge_yes_c": 1.5,
      "fee_yes": 0.02,
@@ -799,7 +799,7 @@
      "best_edge_c": 1.5,
      "best_ask": 0.29,
      "best_fee": 0.02,
-     "best_size": 35012.58,
+     "best_size": 358702.69,
      "best_fair": 0.325,
      "kind": "spread",
      "period": "FG",
@@ -841,12 +841,12 @@
       "b": -161
      },
      "nordicbet": {
-      "a": 125,
-      "b": -156
+      "a": 130,
+      "b": -161
      },
      "betsson": {
-      "a": 125,
-      "b": -156
+      "a": 130,
+      "b": -161
      },
      "gtbets": {
       "a": 135,
@@ -960,14 +960,14 @@
       "b": -115
      },
      "nordicbet": {
-      "a": -102,
+      "a": 100,
       "point": 2.5,
-      "b": -120
+      "b": -123
      },
      "betsson": {
-      "a": -102,
+      "a": 100,
       "point": 2.5,
-      "b": -120
+      "b": -123
      },
      "gtbets": {
       "a": -114,
@@ -1035,9 +1035,9 @@
       "b": -105
      },
      "coolbet": {
-      "a": 101,
-      "point": 2.5,
-      "b": -119
+      "a": -119,
+      "point": 3.0,
+      "b": 101
      },
      "tipico_de": {
       "a": 100,
@@ -1142,9 +1142,9 @@
       "b": -110
      },
      "marathonbet": {
-      "a": -108,
+      "a": -109,
       "point": 46.5,
-      "b": -118
+      "b": -116
      },
      "betanysports": {
       "a": -110,
@@ -1216,7 +1216,7 @@
      "yes_ask": 0.37,
      "no_ask": 0.64,
      "yes_ask_size": 1650.06,
-     "no_ask_size": 45733.0,
+     "no_ask_size": 45563.0,
      "edge_yes_c": 2.0,
      "fee_yes": 0.02,
      "edge_no_c": -7.0,
@@ -1567,9 +1567,9 @@
       "b": -111
      },
      "nordicbet": {
-      "a": -111,
-      "point": 44.5,
-      "b": -111
+      "a": -147,
+      "point": 42.5,
+      "b": 118
      },
      "gtbets": {
       "a": -109,
@@ -1627,7 +1627,7 @@
       "b": -111
      },
      "matchbook": {
-      "a": -108,
+      "a": -106,
       "point": 44.5,
       "b": 102
      },
@@ -1796,9 +1796,9 @@
       "point": 2.5
      },
      "nordicbet": {
-      "b": -118,
-      "a": -105,
-      "point": 1.5
+      "b": -152,
+      "a": 122,
+      "point": -1.5
      },
      "fanduel": {
       "b": -118,
@@ -1821,9 +1821,9 @@
       "point": 2.5
      },
      "betsson": {
-      "b": -118,
-      "a": -105,
-      "point": 1.5
+      "b": -106,
+      "a": -116,
+      "point": 2.5
      },
      "lowvig": {
       "b": -120,
@@ -2168,9 +2168,9 @@
       "b": -115
      },
      "nordicbet": {
-      "a": -104,
-      "point": -10.5,
-      "b": -119
+      "a": -256,
+      "point": -3.5,
+      "b": 200
      },
      "fanduel": {
       "a": -104,
@@ -2895,9 +2895,9 @@
       "point": -4.5
      },
      "nordicbet": {
-      "b": -114,
-      "a": -109,
-      "point": -4.5
+      "b": -169,
+      "a": 136,
+      "point": -7.5
      },
      "fanduel": {
       "b": -104,
@@ -3637,9 +3637,9 @@
       "b": -110
      },
      "nordicbet": {
-      "a": -102,
-      "point": -3.5,
-      "b": -120
+      "a": -400,
+      "point": 3.5,
+      "b": 295
      },
      "fanduel": {
       "a": -105,
@@ -3849,9 +3849,9 @@
       "b": -110
      },
      "matchbook": {
-      "a": -111,
-      "point": 54.0,
-      "b": 102
+      "a": -105,
+      "point": 54.5,
+      "b": 104
      },
      "fanatics": {
       "a": -110,
@@ -4687,7 +4687,7 @@
      "fair_yes": 0.32,
      "yes_ask": 0.27,
      "no_ask": 0.74,
-     "yes_ask_size": 106665.78,
+     "yes_ask_size": 109953.78,
      "no_ask_size": 347280.45,
      "edge_yes_c": 3.0,
      "fee_yes": 0.02,
@@ -4697,7 +4697,7 @@
      "best_edge_c": 3.0,
      "best_ask": 0.27,
      "best_fee": 0.02,
-     "best_size": 106665.78,
+     "best_size": 109953.78,
      "best_fair": 0.32,
      "kind": "spread",
      "period": "FG",
@@ -4946,7 +4946,7 @@
      },
      "matchbook": {
       "b": 100,
-      "a": -105,
+      "a": -104,
       "point": 5.0
      },
      "pinnacle": {
@@ -5426,9 +5426,9 @@
       "point": -6.5
      },
      "nordicbet": {
-      "b": -114,
-      "a": -109,
-      "point": -6.5
+      "b": 185,
+      "a": -238,
+      "point": -2.5
      },
      "fanduel": {
       "b": -110,
@@ -6203,9 +6203,9 @@
       "b": -109
      },
      "nordicbet": {
-      "a": -114,
-      "point": 45.5,
-      "b": -109
+      "a": 186,
+      "point": 52.5,
+      "b": -238
      },
      "sport888": {
       "a": -110,
@@ -8262,14 +8262,14 @@
       "b": -101
      },
      "betsson": {
-      "a": -111,
+      "a": -109,
       "point": -4.5,
-      "b": -114
+      "b": -116
      },
      "nordicbet": {
-      "a": -112,
+      "a": -110,
       "point": -4.5,
-      "b": -115
+      "b": -118
      }
     },
     "FG_total": {
@@ -8359,14 +8359,14 @@
       "b": -109
      },
      "betsson": {
-      "a": -111,
-      "point": 40.0,
-      "b": -114
+      "a": -116,
+      "point": 39.5,
+      "b": -109
      },
      "nordicbet": {
-      "a": -112,
-      "point": 40.0,
-      "b": -115
+      "a": -118,
+      "point": 39.5,
+      "b": -110
      }
     }
    },
@@ -8435,7 +8435,7 @@
      "yes_ask": 0.32,
      "no_ask": 0.69,
      "yes_ask_size": 288.0,
-     "no_ask_size": 7140.0,
+     "no_ask_size": 9987.0,
      "edge_yes_c": 1.6,
      "fee_yes": 0.02,
      "edge_no_c": -6.6,
@@ -8462,7 +8462,7 @@
      "yes_ask": 0.35,
      "no_ask": 0.66,
      "yes_ask_size": 160.0,
-     "no_ask_size": 19942.51,
+     "no_ask_size": 12291.09,
      "edge_yes_c": 1.6,
      "fee_yes": 0.02,
      "edge_no_c": -6.6,
@@ -8593,8 +8593,8 @@
       "point": -6.5
      },
      "nordicbet": {
-      "b": -112,
-      "a": -115,
+      "b": -110,
+      "a": -118,
       "point": -6.5
      },
      "mybookieag": {
@@ -8613,8 +8613,8 @@
       "point": -6.5
      },
      "betsson": {
-      "b": -111,
-      "a": -114,
+      "b": -109,
+      "a": -116,
       "point": -6.5
      },
      "unibet_se": {
@@ -8689,7 +8689,7 @@
      },
      "matchbook": {
       "b": -101,
-      "a": -109,
+      "a": -108,
       "point": -6.5
      }
     },
@@ -8765,9 +8765,9 @@
       "b": -115
      },
      "betanysports": {
-      "a": -105,
+      "a": -110,
       "point": 57.0,
-      "b": -115
+      "b": -110
      },
      "pinnacle": {
       "a": -115,
@@ -8790,7 +8790,7 @@
       "b": -103
      },
      "matchbook": {
-      "a": -102,
+      "a": -103,
       "point": 57.0,
       "b": -105
      }
@@ -8806,8 +8806,8 @@
      "fair_yes": 0.618,
      "yes_ask": 0.66,
      "no_ask": 0.35,
-     "yes_ask_size": 10013.9,
-     "no_ask_size": 289.09,
+     "yes_ask_size": 12261.0,
+     "no_ask_size": 1289.09,
      "edge_yes_c": -6.2,
      "fee_yes": 0.02,
      "edge_no_c": 1.2,
@@ -8816,7 +8816,7 @@
      "best_edge_c": 1.2,
      "best_ask": 0.35,
      "best_fee": 0.02,
-     "best_size": 289.09,
+     "best_size": 1289.09,
      "best_fair": 0.382,
      "kind": "spread",
      "period": "FG",
@@ -8833,8 +8833,8 @@
      "fair_yes": 0.64,
      "yes_ask": 0.68,
      "no_ask": 0.33,
-     "yes_ask_size": 690.09,
-     "no_ask_size": 4736.63,
+     "yes_ask_size": 620.09,
+     "no_ask_size": 4806.63,
      "edge_yes_c": -6.0,
      "fee_yes": 0.02,
      "edge_no_c": 1.0,
@@ -8843,7 +8843,7 @@
      "best_edge_c": 1.0,
      "best_ask": 0.33,
      "best_fee": 0.02,
-     "best_size": 4736.63,
+     "best_size": 4806.63,
      "best_fair": 0.36,
      "kind": "spread",
      "period": "FG",
