@@ -1,5 +1,5 @@
 {
- "scanned_at_utc": "2026-11-17T00:38:26+00:00",
+ "scanned_at_utc": "2026-11-17T00:48:38+00:00",
  "games": [
   {
    "league": "NFL",
@@ -34,8 +34,8 @@
       "b": 190
      },
      "betclic_fr": {
-      "a": -238,
-      "b": 170
+      "a": -250,
+      "b": 160
      },
      "lowvig": {
       "a": -213,
@@ -106,8 +106,8 @@
       "b": 190
      },
      "betanysports": {
-      "a": -220,
-      "b": 180
+      "a": -225,
+      "b": 185
      },
      "everygame": {
       "a": -220,
@@ -122,8 +122,8 @@
       "b": 200
      },
      "fanatics": {
-      "a": -225,
-      "b": 185
+      "a": -220,
+      "b": 180
      },
      "matchbook": {
       "a": -208,
@@ -214,7 +214,7 @@
      "betmgm": {
       "a": -110,
       "point": -4.5,
-      "b": -110
+      "b": -108
      },
      "bovada": {
       "a": -110,
@@ -247,9 +247,9 @@
       "b": -115
      },
      "betanysports": {
-      "a": -105,
+      "a": -110,
       "point": -4.5,
-      "b": -115
+      "b": -110
      },
      "everygame": {
       "a": -110,
@@ -262,9 +262,9 @@
       "b": -110
      },
      "matchbook": {
-      "a": -102,
+      "a": 100,
       "point": -4.5,
-      "b": 100
+      "b": -102
      }
     },
     "FG_total": {
@@ -283,15 +283,10 @@
       "point": 39.5,
       "b": -110
      },
-     "nordicbet": {
-      "a": -116,
-      "point": 38.5,
-      "b": -106
-     },
      "betsson": {
-      "a": -116,
-      "point": 38.5,
-      "b": -106
+      "a": 120,
+      "point": 41.5,
+      "b": -149
      },
      "fanduel": {
       "a": -105,
@@ -360,7 +355,7 @@
      },
      "coolbet": {
       "a": -108,
-      "point": 39.0,
+      "point": 39.5,
       "b": -110
      },
      "mybookieag": {
@@ -389,7 +384,7 @@
       "b": -115
      },
      "matchbook": {
-      "a": -101,
+      "a": -103,
       "point": 39.5,
       "b": 100
      }
@@ -513,49 +508,22 @@
    "pinnacle_fair_home_cents": 66.4,
    "kalshi": [
     {
-     "ticker": "KXNFL1HTOTAL-26NOV16LACBAL-21",
-     "contract": "Over 20.5 points",
-     "fair_yes": 0.464,
-     "yes_ask": 0.42,
-     "no_ask": 0.59,
-     "yes_ask_size": 46206.21,
-     "no_ask_size": 16153.36,
-     "edge_yes_c": 2.4,
-     "fee_yes": 0.02,
-     "edge_no_c": -7.4,
-     "fee_no": 0.02,
-     "best_side": "YES",
-     "best_edge_c": 2.4,
-     "best_ask": 0.42,
-     "best_fee": 0.02,
-     "best_size": 46206.21,
-     "best_fair": 0.464,
-     "kind": "total",
-     "period": "1H",
-     "strike": 20.5,
-     "team_side": null,
-     "pts_from_pinnacle": 1.0,
-     "direction": "over",
-     "confirmed_by": [],
-     "grade": "LOG"
-    },
-    {
      "ticker": "KXNFL1HTOTAL-26NOV16LACBAL-25",
      "contract": "Over 24.5 points",
      "fair_yes": 0.303,
-     "yes_ask": 0.26,
-     "no_ask": 0.75,
-     "yes_ask_size": 36369.0,
-     "no_ask_size": 88.75,
-     "edge_yes_c": 2.3,
+     "yes_ask": 0.25,
+     "no_ask": 0.76,
+     "yes_ask_size": 100.0,
+     "no_ask_size": 68041.27,
+     "edge_yes_c": 3.3,
      "fee_yes": 0.02,
-     "edge_no_c": -7.3,
+     "edge_no_c": -8.3,
      "fee_no": 0.02,
      "best_side": "YES",
-     "best_edge_c": 2.3,
-     "best_ask": 0.26,
+     "best_edge_c": 3.3,
+     "best_ask": 0.25,
      "best_fee": 0.02,
-     "best_size": 36369.0,
+     "best_size": 100.0,
      "best_fair": 0.303,
      "kind": "total",
      "period": "1H",
@@ -567,12 +535,39 @@
      "grade": "LOG"
     },
     {
+     "ticker": "KXNFL1HTOTAL-26NOV16LACBAL-21",
+     "contract": "Over 20.5 points",
+     "fair_yes": 0.464,
+     "yes_ask": 0.42,
+     "no_ask": 0.59,
+     "yes_ask_size": 46019.96,
+     "no_ask_size": 15380.75,
+     "edge_yes_c": 2.4,
+     "fee_yes": 0.02,
+     "edge_no_c": -7.4,
+     "fee_no": 0.02,
+     "best_side": "YES",
+     "best_edge_c": 2.4,
+     "best_ask": 0.42,
+     "best_fee": 0.02,
+     "best_size": 46019.96,
+     "best_fair": 0.464,
+     "kind": "total",
+     "period": "1H",
+     "strike": 20.5,
+     "team_side": null,
+     "pts_from_pinnacle": 1.0,
+     "direction": "over",
+     "confirmed_by": [],
+     "grade": "LOG"
+    },
+    {
      "ticker": "KXNFL1HTOTAL-26NOV16LACBAL-18",
      "contract": "Over 17.5 points",
      "fair_yes": 0.592,
      "yes_ask": 0.56,
      "no_ask": 0.45,
-     "yes_ask_size": 59086.38,
+     "yes_ask_size": 52543.27,
      "no_ask_size": 9857.02,
      "edge_yes_c": 1.2,
      "fee_yes": 0.02,
@@ -582,7 +577,7 @@
      "best_edge_c": 1.2,
      "best_ask": 0.56,
      "best_fee": 0.02,
-     "best_size": 59086.38,
+     "best_size": 52543.27,
      "best_fair": 0.592,
      "kind": "total",
      "period": "1H",
@@ -599,8 +594,8 @@
      "fair_yes": 0.422,
      "yes_ask": 0.39,
      "no_ask": 0.62,
-     "yes_ask_size": 54770.87,
-     "no_ask_size": 3115.24,
+     "yes_ask_size": 54954.87,
+     "no_ask_size": 3073.97,
      "edge_yes_c": 1.2,
      "fee_yes": 0.02,
      "edge_no_c": -6.2,
@@ -609,7 +604,7 @@
      "best_edge_c": 1.2,
      "best_ask": 0.39,
      "best_fee": 0.02,
-     "best_size": 54770.87,
+     "best_size": 54954.87,
      "best_fair": 0.422,
      "kind": "total",
      "period": "1H",
@@ -926,9 +921,9 @@
       "b": -114
      },
      "nordicbet": {
-      "a": -109,
-      "point": 44.5,
-      "b": -114
+      "a": -154,
+      "point": 41.5,
+      "b": 124
      },
      "gtbets": {
       "a": -109,
@@ -1517,11 +1512,11 @@
      },
      "matchbook": {
       "b": 114,
-      "a": -137
+      "a": -135
      },
      "betfair_ex_eu": {
       "b": 116,
-      "a": -133
+      "a": -135
      },
      "fanatics": {
       "b": 110,
@@ -1692,9 +1687,9 @@
       "b": -105
      },
      "matchbook": {
-      "a": -102,
-      "point": 45.0,
-      "b": -118
+      "a": -112,
+      "point": 44.0,
+      "b": -108
      },
      "fanatics": {
       "a": -105,
@@ -1841,9 +1836,9 @@
       "b": -105
      },
      "nordicbet": {
-      "a": -111,
-      "point": -16.5,
-      "b": -111
+      "a": -294,
+      "point": -7.5,
+      "b": 225
      },
      "fanduel": {
       "a": -110,
@@ -1978,9 +1973,9 @@
       "b": -108
      },
      "nordicbet": {
-      "a": -114,
-      "point": 45.5,
-      "b": -109
+      "a": 180,
+      "point": 52.5,
+      "b": -227
      },
      "fanduel": {
       "a": -115,
@@ -2460,7 +2455,7 @@
      "fair_yes": 0.557,
      "yes_ask": 0.6,
      "no_ask": 0.41,
-     "yes_ask_size": 412.94,
+     "yes_ask_size": 449.3,
      "no_ask_size": 1057.88,
      "edge_yes_c": -6.3,
      "fee_yes": 0.02,
@@ -2620,9 +2615,9 @@
       "b": -109
      },
      "nordicbet": {
-      "a": -114,
-      "point": -7.5,
-      "b": -109
+      "a": 250,
+      "point": -18.5,
+      "b": -333
      },
      "fanduel": {
       "a": -115,
@@ -2961,8 +2956,8 @@
       "b": 230
      },
      "pinnacle": {
-      "a": -282,
-      "b": 238
+      "a": -277,
+      "b": 234
      },
      "betanysports": {
       "a": -270,
@@ -3085,9 +3080,9 @@
       "b": -110
      },
      "pinnacle": {
-      "a": -106,
+      "a": -104,
       "point": -6.5,
-      "b": -106
+      "b": -109
      },
      "betanysports": {
       "a": -110,
@@ -3207,9 +3202,9 @@
       "b": -110
      },
      "pinnacle": {
-      "a": -103,
+      "a": -104,
       "point": 46.5,
-      "b": -111
+      "b": -110
      },
      "betanysports": {
       "a": -110,
@@ -3245,7 +3240,7 @@
    },
    "note": "a = home side (or Over) price, b = away side (or Under) price; points are home/over",
    "book_value": [],
-   "pinnacle_fair_home_cents": 71.4,
+   "pinnacle_fair_home_cents": 71.0,
    "kalshi": []
   },
   {
@@ -3405,9 +3400,9 @@
       "b": -109
      },
      "nordicbet": {
-      "a": -114,
-      "point": 4.5,
-      "b": -109
+      "a": 215,
+      "point": -2.5,
+      "b": -278
      },
      "lowvig": {
       "a": -105,
@@ -3647,12 +3642,12 @@
    "markets": {
     "ml": {
      "draftkings": {
-      "a": -170,
-      "b": 142
+      "a": -166,
+      "b": 140
      },
      "williamhill_us": {
-      "a": -173,
-      "b": 146
+      "a": -164,
+      "b": 139
      },
      "nordicbet": {
       "a": -172,
@@ -3663,16 +3658,16 @@
       "b": 134
      },
      "betclic_fr": {
-      "a": -182,
-      "b": 130
+      "a": -172,
+      "b": 125
      },
      "betsson": {
       "a": -172,
       "b": 138
      },
      "gtbets": {
-      "a": -170,
-      "b": 145
+      "a": -160,
+      "b": 135
      },
      "unibet_nl": {
       "a": -190,
@@ -3695,31 +3690,31 @@
       "b": 150
      },
      "mybookieag": {
-      "a": -169,
-      "b": 137
+      "a": -162,
+      "b": 132
      },
      "sport888": {
       "a": -175,
       "b": 138
      },
      "codere_it": {
-      "a": -172,
-      "b": 134
+      "a": -167,
+      "b": 129
      },
      "betmgm": {
-      "a": -165,
-      "b": 138
+      "a": -160,
+      "b": 135
      },
      "williamhill": {
       "a": -175,
       "b": 138
      },
      "matchbook": {
-      "a": -156,
-      "b": 134
+      "a": -152,
+      "b": 128
      },
      "betfair_ex_eu": {
-      "a": -156,
+      "a": -149,
       "b": 134
      },
      "fanatics": {
@@ -3729,14 +3724,14 @@
     },
     "FG_spread": {
      "draftkings": {
-      "a": -110,
+      "a": -105,
       "point": -3.0,
-      "b": -110
+      "b": -115
      },
      "williamhill_us": {
-      "a": -110,
+      "a": -106,
       "point": -3.0,
-      "b": -109
+      "b": -114
      },
      "nordicbet": {
       "a": -137,
@@ -3759,9 +3754,9 @@
       "b": 110
      },
      "gtbets": {
-      "a": -109,
+      "a": -104,
       "point": -3.0,
-      "b": -109
+      "b": -114
      },
      "unibet_nl": {
       "a": -104,
@@ -3799,14 +3794,14 @@
       "b": -125
      },
      "betmgm": {
-      "a": -108,
+      "a": -105,
       "point": -3.0,
-      "b": -110
+      "b": -112
      },
      "matchbook": {
-      "a": -101,
-      "point": -3.0,
-      "b": -119
+      "a": -115,
+      "point": -2.5,
+      "b": -105
      },
      "fanatics": {
       "a": -110,
@@ -3826,9 +3821,9 @@
       "b": -110
      },
      "nordicbet": {
-      "a": -111,
+      "a": -114,
       "point": 40.5,
-      "b": -111
+      "b": -109
      },
      "fanduel": {
       "a": -110,
@@ -3841,9 +3836,9 @@
       "b": -111
      },
      "betsson": {
-      "a": -111,
+      "a": -114,
       "point": 40.5,
-      "b": -111
+      "b": -109
      },
      "gtbets": {
       "a": -109,
@@ -4018,7 +4013,7 @@
       "b": 400
      },
      "matchbook": {
-      "a": -526,
+      "a": -500,
       "b": 380
      }
     },
@@ -4034,9 +4029,9 @@
       "b": -109
      },
      "nordicbet": {
-      "a": -119,
-      "point": -9.5,
-      "b": -104
+      "a": 180,
+      "point": -16.5,
+      "b": -227
      },
      "fanduel": {
       "a": -115,
@@ -4154,9 +4149,9 @@
       "b": -110
      },
      "matchbook": {
-      "a": -112,
+      "a": -108,
       "point": -10.0,
-      "b": -108
+      "b": -112
      }
     },
     "FG_total": {
@@ -4276,9 +4271,9 @@
       "b": -110
      },
      "matchbook": {
-      "a": -102,
-      "point": 41.0,
-      "b": -118
+      "a": -110,
+      "point": 40.5,
+      "b": -110
      }
     }
    },
@@ -4587,9 +4582,9 @@
       "b": -109
      },
      "nordicbet": {
-      "a": -111,
-      "point": 46.5,
-      "b": -111
+      "a": 175,
+      "point": 52.5,
+      "b": -222
      },
      "pmu_fr": {
       "a": -148,
@@ -4720,24 +4715,24 @@
       "a": -160
      },
      "betrivers": {
-      "b": 135,
-      "a": -165
+      "b": 140,
+      "a": -175
      },
      "unibet_nl": {
-      "b": 140,
-      "a": -159
+      "b": 145,
+      "a": -165
      },
      "pmu_fr": {
-      "b": 112,
-      "a": -225
+      "b": 116,
+      "a": -235
      },
      "leovegas_se": {
-      "b": 138,
-      "a": -162
+      "b": 140,
+      "a": -167
      },
      "unibet_se": {
-      "b": 140,
-      "a": -159
+      "b": 145,
+      "a": -165
      },
      "marathonbet": {
       "b": 119,
@@ -4821,9 +4816,9 @@
       "point": -3.0
      },
      "nordicbet": {
-      "b": -130,
-      "a": 105,
-      "point": -3.5
+      "b": 105,
+      "a": -130,
+      "point": -2.5
      },
      "lowvig": {
       "b": -105,
@@ -4841,28 +4836,28 @@
       "point": -3.0
      },
      "betrivers": {
-      "b": -120,
-      "a": -103,
+      "b": -117,
+      "a": -105,
       "point": -3.5
      },
      "unibet_nl": {
-      "b": -120,
-      "a": -103,
+      "b": -117,
+      "a": -105,
       "point": -3.5
      },
      "pmu_fr": {
-      "b": -162,
-      "a": -136,
+      "b": -157,
+      "a": -139,
       "point": -3.5
      },
      "leovegas_se": {
-      "b": -120,
-      "a": -103,
+      "b": -117,
+      "a": -105,
       "point": -3.5
      },
      "unibet_se": {
-      "b": -120,
-      "a": -103,
+      "b": -117,
+      "a": -105,
       "point": -3.5
      },
      "marathonbet": {
@@ -4876,9 +4871,9 @@
       "point": -3.5
      },
      "betsson": {
-      "b": -130,
-      "a": 105,
-      "point": -3.5
+      "b": 105,
+      "a": -130,
+      "point": -2.5
      },
      "pinnacle": {
       "b": -102,
@@ -4906,8 +4901,8 @@
       "point": -3.0
      },
      "coolbet": {
-      "b": -108,
-      "a": -110,
+      "b": -110,
+      "a": -108,
       "point": -3.0
      }
     },
@@ -4968,19 +4963,19 @@
       "b": -109
      },
      "betrivers": {
-      "a": -108,
-      "point": 46.5,
-      "b": -113
+      "a": -113,
+      "point": 46.0,
+      "b": -108
      },
      "unibet_nl": {
-      "a": -108,
-      "point": 46.5,
-      "b": -113
+      "a": -113,
+      "point": 46.0,
+      "b": -108
      },
      "pmu_fr": {
-      "a": -143,
-      "point": 46.5,
-      "b": -150
+      "a": -152,
+      "point": 46.0,
+      "b": -143
      },
      "marathonbet": {
       "a": -108,
@@ -5034,7 +5029,7 @@
      "fair_yes": 0.47,
      "yes_ask": 0.44,
      "no_ask": 0.57,
-     "yes_ask_size": 908.12,
+     "yes_ask_size": 884.32,
      "no_ask_size": 5751.22,
      "edge_yes_c": 1.0,
      "fee_yes": 0.02,
@@ -5044,7 +5039,7 @@
      "best_edge_c": 1.0,
      "best_ask": 0.44,
      "best_fee": 0.02,
-     "best_size": 908.12,
+     "best_size": 884.32,
      "best_fair": 0.47,
      "kind": "spread",
      "period": "FG",
@@ -5066,8 +5061,8 @@
    "markets": {
     "ml": {
      "draftkings": {
-      "b": -290,
-      "a": 235
+      "b": -298,
+      "a": 240
      },
      "williamhill_us": {
       "b": -290,
@@ -5134,24 +5129,24 @@
       "a": 233
      },
      "nordicbet": {
-      "b": -294,
-      "a": 226
+      "b": -303,
+      "a": 233
      },
      "williamhill": {
       "b": -275,
       "a": 210
      },
      "betmgm": {
-      "b": -285,
-      "a": 230
+      "b": -295,
+      "a": 240
      },
      "tipico_de": {
       "b": -286,
       "a": 210
      },
      "coolbet": {
-      "b": -286,
-      "a": 235
+      "b": -294,
+      "a": 240
      },
      "betanysports": {
       "b": -280,
@@ -5251,8 +5246,8 @@
       "point": 6.5
      },
      "betsson": {
-      "b": -118,
-      "a": -105,
+      "b": -119,
+      "a": -104,
       "point": 5.5
      },
      "nordicbet": {
@@ -5276,8 +5271,8 @@
       "point": 6.5
      },
      "coolbet": {
-      "b": -110,
-      "a": -108,
+      "b": -111,
+      "a": -105,
       "point": 6.0
      },
      "betanysports": {
@@ -5383,9 +5378,9 @@
       "b": -105
      },
      "coolbet": {
-      "a": -108,
-      "point": 53.0,
-      "b": -110
+      "a": -110,
+      "point": 52.5,
+      "b": -108
      },
      "betanysports": {
       "a": -110,
@@ -5841,8 +5836,8 @@
       "a": -450
      },
      "betfair_ex_eu": {
-      "b": 370,
-      "a": -417
+      "b": 380,
+      "a": -435
      }
     },
     "FG_spread": {
@@ -7225,6 +7220,10 @@
      "betfair_ex_eu": {
       "b": 128,
       "a": -139
+     },
+     "matchbook": {
+      "b": 122,
+      "a": -147
      }
     },
     "FG_spread": {
@@ -7342,6 +7341,11 @@
       "b": -115,
       "a": -105,
       "point": -3.0
+     },
+     "matchbook": {
+      "b": -119,
+      "a": -101,
+      "point": -3.0
      }
     },
     "FG_total": {
@@ -7444,6 +7448,11 @@
       "a": -110,
       "point": 50.5,
       "b": -110
+     },
+     "matchbook": {
+      "a": -114,
+      "point": 50.5,
+      "b": -106
      }
     }
    },
@@ -8217,8 +8226,8 @@
       "point": -13.0
      },
      "onexbet": {
-      "b": -108,
-      "a": -112,
+      "b": -106,
+      "a": -114,
       "point": -12.5
      },
      "betrivers": {
@@ -8334,9 +8343,9 @@
       "b": -110
      },
      "onexbet": {
-      "a": -107,
-      "point": 42.5,
-      "b": -113
+      "a": -110,
+      "point": 40.5,
+      "b": -110
      },
      "betrivers": {
       "a": -110,
@@ -9112,7 +9121,7 @@
      "yes_ask": 0.43,
      "no_ask": 0.58,
      "yes_ask_size": 6.0,
-     "no_ask_size": 2878.0,
+     "no_ask_size": 2895.0,
      "edge_yes_c": 1.0,
      "fee_yes": 0.02,
      "edge_no_c": -6.0,
@@ -9801,7 +9810,7 @@
      "yes_ask": 0.36,
      "no_ask": 0.68,
      "yes_ask_size": 250.0,
-     "no_ask_size": 388.0,
+     "no_ask_size": 308.0,
      "edge_yes_c": 1.0,
      "fee_yes": 0.02,
      "edge_no_c": -9.0,
@@ -11856,9 +11865,9 @@
       "b": -101
      },
      "onexbet": {
-      "a": -122,
+      "a": -118,
       "point": 3.5,
-      "b": 102
+      "b": -102
      },
      "fanatics": {
       "a": -110,
@@ -12449,8 +12458,8 @@
       "a": 205
      },
      "coolbet": {
-      "b": -256,
-      "a": 203
+      "b": -250,
+      "a": 200
      },
      "williamhill": {
       "b": -250,
@@ -12521,8 +12530,8 @@
       "a": 192
      },
      "betfair_ex_eu": {
-      "b": -250,
-      "a": 160
+      "b": -233,
+      "a": 215
      }
     },
     "FG_spread": {
@@ -12532,8 +12541,8 @@
       "point": 6.5
      },
      "coolbet": {
-      "b": -115,
-      "a": -105,
+      "b": -112,
+      "a": -109,
       "point": 6.5
      },
      "fanduel": {
@@ -12557,8 +12566,8 @@
       "point": 6.5
      },
      "onexbet": {
-      "b": -111,
-      "a": -109,
+      "b": -113,
+      "a": -107,
       "point": 6.5
      },
      "williamhill_us": {
@@ -14066,7 +14075,7 @@
     "ml": {
      "fanduel": {
       "b": 1100,
-      "a": -2800
+      "a": -2500
      },
      "williamhill_us": {
       "b": 1000,
@@ -14129,8 +14138,8 @@
       "a": -4150
      },
      "mybookieag": {
-      "b": 890,
-      "a": -1887
+      "b": 880,
+      "a": -1786
      },
      "betfair_ex_eu": {
       "b": 1150,
@@ -14139,8 +14148,8 @@
     },
     "FG_spread": {
      "fanduel": {
-      "b": -105,
-      "a": -115,
+      "b": -110,
+      "a": -110,
       "point": -22.5
      },
      "onexbet": {
@@ -14154,9 +14163,9 @@
       "point": -22.5
      },
      "coolbet": {
-      "b": -109,
-      "a": -112,
-      "point": -23.0
+      "b": -110,
+      "a": -110,
+      "point": -22.5
      },
      "draftkings": {
       "b": -112,
@@ -14974,8 +14983,8 @@
       "b": 450
      },
      "betfair_ex_eu": {
-      "a": -588,
-      "b": 370
+      "a": -556,
+      "b": 470
      }
     },
     "FG_spread": {
@@ -15264,8 +15273,8 @@
       "b": -113
      },
      "betfair_ex_eu": {
-      "a": -109,
-      "b": -112
+      "a": -103,
+      "b": -105
      }
     },
     "FG_spread": {
@@ -15641,9 +15650,9 @@
       "b": -110
      },
      "onexbet": {
-      "a": -109,
+      "a": -111,
       "point": 8.5,
-      "b": -111
+      "b": -109
      },
      "unibet_se": {
       "a": -110,
@@ -15743,9 +15752,9 @@
       "b": -110
      },
      "onexbet": {
-      "a": -111,
-      "point": 41.5,
-      "b": -109
+      "a": -113,
+      "point": 40.5,
+      "b": -107
      },
      "unibet_nl": {
       "a": -115,
@@ -15819,7 +15828,7 @@
      "fair_yes": 0.559,
      "yes_ask": 0.62,
      "no_ask": 0.4,
-     "yes_ask_size": 253.0,
+     "yes_ask_size": 266.0,
      "no_ask_size": 130.0,
      "edge_yes_c": -8.1,
      "fee_yes": 0.02,
@@ -15951,7 +15960,7 @@
      },
      "betfair_ex_eu": {
       "b": -10000,
-      "a": -500
+      "a": -1250
      }
     },
     "FG_spread": {
@@ -16236,8 +16245,8 @@
       "a": 148
      },
      "betfair_ex_eu": {
-      "b": -164,
-      "a": 134
+      "b": -182,
+      "a": 126
      }
     },
     "FG_spread": {
@@ -16516,8 +16525,8 @@
       "a": -187
      },
      "betfair_ex_eu": {
-      "b": 138,
-      "a": -172
+      "b": 130,
+      "a": -185
      }
     },
     "FG_spread": {
@@ -17096,8 +17105,8 @@
       "b": -186
      },
      "betfair_ex_eu": {
-      "a": 142,
-      "b": -175
+      "a": 134,
+      "b": -185
      }
     },
     "FG_spread": {
@@ -17442,7 +17451,7 @@
      },
      "betfair_ex_eu": {
       "a": -435,
-      "b": 280
+      "b": 290
      }
     },
     "FG_spread": {
@@ -17839,7 +17848,7 @@
      "everygame": {
       "b": -110,
       "a": -110,
-      "point": 7.5
+      "point": 8.0
      }
     },
     "FG_total": {
@@ -18566,7 +18575,7 @@
      "fair_yes": 0.554,
      "yes_ask": 0.62,
      "no_ask": 0.4,
-     "yes_ask_size": 2329.0,
+     "yes_ask_size": 1542.0,
      "no_ask_size": 4.0,
      "edge_yes_c": -8.6,
      "fee_yes": 0.02,
@@ -18621,7 +18630,7 @@
      "yes_ask": 0.33,
      "no_ask": 0.7,
      "yes_ask_size": 600.0,
-     "no_ask_size": 79.0,
+     "no_ask_size": 80.0,
      "edge_yes_c": 1.1,
      "fee_yes": 0.02,
      "edge_no_c": -8.1,
@@ -19209,7 +19218,7 @@
      "yes_ask": 0.33,
      "no_ask": 0.7,
      "yes_ask_size": 88.0,
-     "no_ask_size": 1.0,
+     "no_ask_size": 13.0,
      "edge_yes_c": 2.3,
      "fee_yes": 0.02,
      "edge_no_c": -9.3,
@@ -19963,8 +19972,8 @@
       "a": -105
      },
      "betfair_ex_eu": {
-      "b": -115,
-      "a": -104
+      "b": -123,
+      "a": -109
      }
     },
     "FG_spread": {
@@ -20741,20 +20750,20 @@
       "b": 333
      },
      "betrivers": {
-      "a": -560,
-      "b": 380
+      "a": -530,
+      "b": 370
      },
      "unibet_nl": {
-      "a": -560,
-      "b": 380
+      "a": -530,
+      "b": 370
      },
      "leovegas_se": {
       "a": -560,
-      "b": 380
+      "b": 370
      },
      "unibet_se": {
-      "a": -560,
-      "b": 380
+      "a": -530,
+      "b": 370
      },
      "betus": {
       "a": -435,
@@ -20769,8 +20778,8 @@
       "b": 340
      },
      "marathonbet": {
-      "a": -417,
-      "b": 288
+      "a": -450,
+      "b": 310
      },
      "mybookieag": {
       "a": -429,
@@ -20824,24 +20833,24 @@
       "b": -108
      },
      "betrivers": {
-      "a": -130,
-      "point": -9.5,
-      "b": 105
+      "a": -110,
+      "point": -10.5,
+      "b": -112
      },
      "unibet_nl": {
-      "a": -130,
-      "point": -9.5,
-      "b": 105
+      "a": -110,
+      "point": -10.5,
+      "b": -112
      },
      "leovegas_se": {
-      "a": -132,
-      "point": -9.5,
-      "b": 104
+      "a": -112,
+      "point": -10.5,
+      "b": -113
      },
      "unibet_se": {
-      "a": -130,
-      "point": -9.5,
-      "b": 105
+      "a": -110,
+      "point": -10.5,
+      "b": -112
      },
      "betus": {
       "a": -110,
@@ -20864,9 +20873,9 @@
       "b": -112
      },
      "marathonbet": {
-      "a": -114,
+      "a": -116,
       "point": -10.5,
-      "b": -114
+      "b": -111
      },
      "onexbet": {
       "a": -112,
@@ -20931,14 +20940,14 @@
       "b": -110
      },
      "betrivers": {
-      "a": -107,
+      "a": -109,
       "point": 61.5,
-      "b": -117
+      "b": -114
      },
      "unibet_nl": {
-      "a": -107,
+      "a": -109,
       "point": 61.5,
-      "b": -117
+      "b": -114
      },
      "betus": {
       "a": -110,
@@ -20961,9 +20970,9 @@
       "b": -110
      },
      "marathonbet": {
-      "a": -122,
-      "point": 60.5,
-      "b": -106
+      "a": -114,
+      "point": 61.5,
+      "b": -114
      },
      "onexbet": {
       "a": -110,
@@ -21919,8 +21928,8 @@
       "b": 770
      },
      "fanduel": {
-      "a": -1400,
-      "b": 810
+      "a": -1450,
+      "b": 860
      },
      "betrivers": {
       "a": -2000,
@@ -24492,8 +24501,8 @@
       "b": -275
      },
      "pinnacle": {
-      "a": 221,
-      "b": -267
+      "a": 223,
+      "b": -271
      },
      "bovada": {
       "a": 220,
@@ -24581,9 +24590,9 @@
       "b": -110
      },
      "pinnacle": {
-      "a": -110,
+      "a": -108,
       "point": 7.0,
-      "b": -106
+      "b": -108
      },
      "bovada": {
       "a": -110,
@@ -24686,7 +24695,7 @@
    },
    "note": "a = home side (or Over) price, b = away side (or Under) price; points are home/over",
    "book_value": [],
-   "pinnacle_fair_home_cents": 30.0,
+   "pinnacle_fair_home_cents": 29.8,
    "kalshi": []
   },
   {
@@ -24762,8 +24771,8 @@
       "b": 575
      },
      "marathonbet": {
-      "a": -1088,
-      "b": 575
+      "a": -1075,
+      "b": 570
      },
      "mybookieag": {
       "a": -752,
@@ -25626,7 +25635,7 @@
       "b": 325
      },
      "leovegas_se": {
-      "a": -455,
+      "a": -480,
       "b": 325
      },
      "unibet_nl": {
@@ -25646,8 +25655,8 @@
       "b": 280
      },
      "marathonbet": {
-      "a": -370,
-      "b": 262
+      "a": -385,
+      "b": 270
      },
      "mybookieag": {
       "a": -370,
@@ -25671,9 +25680,9 @@
       "b": -106
      },
      "coolbet": {
-      "a": -112,
+      "a": -110,
       "point": -9.0,
-      "b": -109
+      "b": -110
      },
      "gtbets": {
       "a": -109,
@@ -25701,24 +25710,24 @@
       "b": -108
      },
      "unibet_se": {
-      "a": -125,
-      "point": -8.5,
-      "b": 100
+      "a": -109,
+      "point": -10.0,
+      "b": -114
      },
      "betrivers": {
-      "a": -125,
-      "point": -8.5,
-      "b": 100
+      "a": -109,
+      "point": -10.0,
+      "b": -114
      },
      "leovegas_se": {
-      "a": -127,
-      "point": -8.5,
-      "b": 100
+      "a": -110,
+      "point": -10.0,
+      "b": -115
      },
      "unibet_nl": {
-      "a": -125,
-      "point": -8.5,
-      "b": 100
+      "a": -109,
+      "point": -10.0,
+      "b": -114
      },
      "betus": {
       "a": -110,
@@ -25741,9 +25750,9 @@
       "b": -110
      },
      "marathonbet": {
-      "a": -112,
+      "a": -114,
       "point": -9.5,
-      "b": -115
+      "b": -114
      },
      "mybookieag": {
       "a": -110,
@@ -25773,9 +25782,9 @@
       "b": -114
      },
      "coolbet": {
-      "a": -112,
+      "a": -110,
       "point": 52.0,
-      "b": -109
+      "b": -110
      },
      "gtbets": {
       "a": -109,
@@ -25783,9 +25792,9 @@
       "b": -109
      },
      "fanatics": {
-      "a": -110,
+      "a": -115,
       "point": 51.5,
-      "b": -110
+      "b": -105
      },
      "fanduel": {
       "a": -115,
@@ -25803,14 +25812,14 @@
       "b": -105
      },
      "betrivers": {
-      "a": -117,
-      "point": 51.5,
-      "b": -107
+      "a": -109,
+      "point": 52.5,
+      "b": -114
      },
      "unibet_nl": {
-      "a": -117,
-      "point": 51.5,
-      "b": -107
+      "a": -109,
+      "point": 52.5,
+      "b": -114
      },
      "betus": {
       "a": -110,
@@ -25833,9 +25842,9 @@
       "b": -110
      },
      "marathonbet": {
-      "a": -106,
+      "a": -114,
       "point": 51.5,
-      "b": -122
+      "b": -114
      },
      "mybookieag": {
       "a": -110,
