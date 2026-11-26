@@ -1,0 +1,37 @@
+Backtest: Kalshi soccer 1st-half Over 0.5, all settled markets Sep 19 - Nov 25 2026.
+Price = Kalshi YES ask on the last hourly candle ending 15+ min before kickoff; quotes wider than 6c skipped.
+P&L = $10 flat per trade after Kalshi taker fee. (Run by Claude, Nov 25 2026.)
+
+usable games 2240 of 2271  dates 2026-09-19 to 2026-11-26
+0-60¢          n=  15  hit  73.3% (±22)  avg ask 53.4¢  breakeven 55.3%  P&L $  +36.33 on $10 each (+24.2% per trade)
+60-70¢         n= 470  hit  64.3% (±4)  avg ask 66.0¢  breakeven 68.0%  P&L $ -254.79 on $10 each (-5.4% per trade)
+70-74¢         n= 508  hit  67.3% (±4)  avg ask 71.6¢  breakeven 73.6%  P&L $ -435.28 on $10 each (-8.6% per trade)
+74-78¢         n= 605  hit  74.7% (±3)  avg ask 75.5¢  breakeven 77.5%  P&L $ -217.88 on $10 each (-3.6% per trade)
+78-80¢         n= 227  hit  73.1% (±6)  avg ask 78.4¢  breakeven 80.4%  P&L $ -206.42 on $10 each (-9.1% per trade)
+80-82¢         n= 170  hit  84.1% (±5)  avg ask 80.5¢  breakeven 82.5%  P&L $  +33.91 on $10 each (+2.0% per trade)
+82-85¢         n= 162  hit  78.4% (±6)  avg ask 82.8¢  breakeven 84.2%  P&L $ -112.30 on $10 each (-6.9% per trade)
+85-90¢         n=  71  hit  85.9% (±8)  avg ask 86.4¢  breakeven 87.4%  P&L $  -12.48 on $10 each (-1.8% per trade)
+90-100¢        n=  12  hit  75.0% (±24)  avg ask 91.5¢  breakeven 92.5%  P&L $  -22.73 on $10 each (-18.9% per trade)
+
+78%+ RULE      n= 642  hit  78.8% (±3)  avg ask 81.2¢  breakeven 82.9%  P&L $ -320.02 on $10 each (-5.0% per trade)
+82%+           n= 245  hit  80.4% (±5)  avg ask 84.3¢  breakeven 85.6%  P&L $ -147.51 on $10 each (-6.0% per trade)
+85%+           n=  83  hit  84.3% (±8)  avg ask 87.1¢  breakeven 88.1%  P&L $  -35.21 on $10 each (-4.2% per trade)
+under 78       n=1598  hit  69.3% (±2)  avg ask 71.3¢  breakeven 73.3%  P&L $ -871.61 on $10 each (-5.5% per trade)
+
+60-70¢: mid 65.4%  actual 64.3%
+70-78¢: mid 73.1%  actual 71.3%
+78-85¢: mid 79.6%  actual 78.0%
+85-100¢: mid 86.4%  actual 84.3%
+
+MLS            n= 106  hit  82.1% (±7)  avg ask 80.8¢  breakeven 82.6%  P&L $   -8.27 on $10 each (-0.8% per trade)
+EREDIVISIE     n=  49  hit  85.7% (±10)  avg ask 81.5¢  breakeven 83.2%  P&L $  +14.72 on $10 each (+3.0% per trade)
+UCL            n=  48  hit  75.0% (±12)  avg ask 82.7¢  breakeven 84.2%  P&L $  -53.90 on $10 each (-11.2% per trade)
+BUNDESLIGA     n=  46  hit  69.6% (±13)  avg ask 81.7¢  breakeven 83.3%  P&L $  -77.21 on $10 each (-16.8% per trade)
+CONCACAFNL     n=  36  hit  88.9% (±10)  avg ask 82.5¢  breakeven 84.1%  P&L $  +20.16 on $10 each (+5.6% per trade)
+UEFANL         n=  36  hit  80.6% (±13)  avg ask 80.8¢  breakeven 82.5%  P&L $   -8.61 on $10 each (-2.4% per trade)
+LIGAEXP        n=  28  hit  71.4% (±17)  avg ask 80.5¢  breakeven 82.3%  P&L $  -37.69 on $10 each (-13.5% per trade)
+UEL            n=  24  hit  70.8% (±18)  avg ask 80.0¢  breakeven 81.8%  P&L $  -32.24 on $10 each (-13.4% per trade)
+EFLL1          n=  23  hit  87.0% (±14)  avg ask 79.5¢  breakeven 81.4%  P&L $  +15.92 on $10 each (+6.9% per trade)
+AFCCL          n=  22  hit  72.7% (±19)  avg ask 81.6¢  breakeven 83.3%  P&L $  -28.40 on $10 each (-12.9% per trade)
+UECL           n=  22  hit  68.2% (±19)  avg ask 81.6¢  breakeven 83.3%  P&L $  -38.33 on $10 each (-17.4% per trade)
+LALIGA         n=  21  hit  76.2% (±18)  avg ask 82.2¢  breakeven 83.8%  P&L $  -20.40 on $10 each (-9.7% per trade)
