@@ -56,5 +56,7 @@ jobs:
           git config user.name "ev-stack-bot"
           git config user.email "bot@evstack.local"
           git add data
-          git diff --cached --quiet || git commit -m "scan $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "scan $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1

@@ -23,3 +23,14 @@ Each scan also pulls Kalshi's football contracts (NFL + college: game winner, sp
 
 - **Odds mismatch:** when a book posts the same number as Pinnacle (spread, total, or who-wins) but its odds beat Pinnacle's no-margin price by 3+ win-% points, it is logged to `data/price_signals.csv` and sent as a "💲 ODDS mismatch" Telegram alert.
 - **Both agree:** each game in `latest.json` carries `book_value` (sportsbook point gaps and odds mismatches with their side). When a Kalshi edge points to the same side, the Kalshi alert is tagged "✅ BOTH AGREE", listed first, and `kalshi.json` records it under `confirmed_by`.
+
+## Soccer first-half check (`soccer_1h.py`, added Nov 25, 2026)
+
+Contract: Kalshi soccer "1st Half Total — Over 0.5 goals" (a goal before halftime). Runs hourly (`.github/workflows/soccer.yml`, :20 past each hour UTC).
+
+- Finds every open Kalshi soccer 1H Over 0.5 market; for games kicking off 15–75 min out it matches the game on The Odds API (kickoff ±25 min + both team names) and pulls Pinnacle's `totals_h1` (1 credit per game, `regions=eu`, `bookmakers=pinnacle`).
+- Pinnacle's no-margin first-half total (0.5 / 0.75 / 1.0 / 1.25 / 1.5, Asian quarter lines included) is turned into a fair chance of a first-half goal with a Poisson goal model.
+- Edge = fair − (Kalshi ask + taker fee), for YES (a goal) and NO (0–0 at HT). Telegram "⚽ SOCCER 1st-half edge": 🟢 ACTION 5¢+, 🟡 ALERT 4¢, 25+ contracts at the ask, re-alerts only if the edge grows 2¢+.
+- Paper test (no money): every game's last pre-kick Kalshi price, Pinnacle line/fair and result go to `data/soccer_1h_log.json` / `.csv`. A Monday-morning Telegram scorecard grades the "78% rule" (buy YES at 78¢+) against the "Pinnacle edge rule" (4¢+ after fee) at $10 flat per trade, plus a model check (Pinnacle fair vs actual goal rate).
+- Credit guard: stops Pinnacle pulls when the Odds API balance drops below 2,500. Kickoff from Kalshi = 1H market occurrence time − 4h (verified against Bovada/Kalshi app times).
+- Model caveat: first halves end 0–0 a little more often than a pure Poisson model says, so fair YES prices can run slightly high; the model-check line in the scorecard measures this.

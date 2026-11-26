@@ -1,0 +1,58 @@
+name: soccer-1h
+
+on:
+  workflow_dispatch:
+    inputs:
+      probe:
+        description: "Coverage test (pulls Pinnacle for up to 4 upcoming games)"
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths: ["soccer_1h.py", ".github/workflows/soccer.yml"]
+  schedule:
+    # Hourly at :20 UTC. Each game is price-checked once, 15-75 min before kickoff.
+    - cron: "20 * * * *"
+
+concurrency:
+  group: soccer
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  soccer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+
+      - name: Telegram chat id
+        id: chat
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python bootstrap_chat.py
+
+      - name: Soccer first-half check
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ steps.chat.outputs.chat_id }}
+          PROBE: ${{ github.event_name == 'push' || inputs.probe == true }}
+        run: |
+          if [ "$PROBE" = "true" ]; then python soccer_1h.py --probe; else python soccer_1h.py; fi
+
+      - name: Commit data
+        run: |
+          git config user.name "ev-stack-bot"
+          git config user.email "bot@evstack.local"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -m "soccer 1h $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1
