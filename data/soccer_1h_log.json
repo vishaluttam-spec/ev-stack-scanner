@@ -11,14 +11,14 @@
   "size": 892.74
  },
  "KXALEAGUE1HTOTAL-26NOV28CCMAUC-1": {
-  "ask": 0.74,
-  "bid": 0.71,
+  "ask": 0.75,
+  "bid": 0.73,
   "game": "Central Coast vs Auckland",
   "kick": "2026-11-28T08:40:00+00:00",
   "league": "ALEAGUE",
-  "mins_to_kick": 1205,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 224.46
+  "mins_to_kick": 638,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1609.5
  },
  "KXBRASILEIRO1HTOTAL-26NOV26SPACR-1": {
   "ask": 0.71,
@@ -33,34 +33,64 @@
   "size": 1212.45
  },
  "KXBRASILEIRO1HTOTAL-26NOV27FLUCRU-1": {
-  "ask": 0.72,
-  "bid": 0.71,
+  "ask": 0.7,
+  "bid": 0.69,
+  "edge_ask": 0.31000000000000005,
+  "edge_c": -1.7,
+  "edge_side": "NO",
+  "fair_yes": 0.6868,
   "game": "Fluminense vs Cruzeiro",
   "kick": "2026-11-27T23:00:00+00:00",
+  "lam": 1.161,
   "league": "BRASILEIRO",
-  "mins_to_kick": 625,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 132.0
+  "mins_to_kick": 58,
+  "odds_event": "soccer_brazil_campeonato/a9f55fe81307fd9832365915351e9175",
+  "pin_line": 1.0,
+  "pin_over": 1.87,
+  "pin_under": 1.93,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 10593.26
  },
  "KXBRASILEIRO1HTOTAL-26NOV28BOTBAH-1": {
   "ask": 0.78,
-  "bid": 0.74,
+  "bid": 0.73,
   "game": "Botafogo vs Bahia",
   "kick": "2026-11-29T00:00:00+00:00",
   "league": "BRASILEIRO",
-  "mins_to_kick": 2125,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 94.47
+  "mins_to_kick": 1558,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 116.69
+ },
+ "KXBRASILEIRO1HTOTAL-26NOV29CFCFLA-1": {
+  "ask": 0.75,
+  "bid": 0.72,
+  "game": "Coritiba vs Flamengo",
+  "kick": "2026-11-29T19:00:00+00:00",
+  "league": "BRASILEIRO",
+  "mins_to_kick": 2698,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 238.26
+ },
+ "KXBRASILEIRO1HTOTAL-26NOV29VITSAN-1": {
+  "ask": 0.73,
+  "bid": 0.68,
+  "game": "Vitoria vs Santos",
+  "kick": "2026-11-29T19:00:00+00:00",
+  "league": "BRASILEIRO",
+  "mins_to_kick": 2698,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 105.15
  },
  "KXBRASILEIROB1HTOTAL-26NOV27VINGOI-1": {
-  "ask": 0.65,
-  "bid": 0.63,
+  "ask": 0.62,
+  "bid": 0.6,
   "game": "Vila Nova vs AC Goianiense",
   "kick": "2026-11-27T23:00:00+00:00",
   "league": "BRASILEIROB",
-  "mins_to_kick": 625,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 1119.45
+  "mins_to_kick": 58,
+  "odds_event": "soccer_brazil_serie_b/cf2ef4aff8a93c9051d70a1c450e4558",
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2885.82
  },
  "KXBUNDESLIGA1HTOTAL-26NOV27SVWBMG-1": {
   "ask": 0.77,
@@ -73,54 +103,94 @@
   "size": 567.42
  },
  "KXBUNDESLIGA1HTOTAL-26NOV28HSVBMU-1": {
-  "ask": 0.83,
-  "bid": 0.81,
+  "ask": 0.81,
+  "bid": 0.8,
   "game": "Hamburg vs Bayern Munich",
   "kick": "2026-11-28T14:30:00+00:00",
   "league": "BUNDESLIGA",
-  "mins_to_kick": 1555,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 497.45
+  "mins_to_kick": 988,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1250.0
  },
  "KXBUNDESLIGA1HTOTAL-26NOV28KOESVE-1": {
-  "ask": 0.77,
+  "ask": 0.76,
   "bid": 0.74,
   "game": "FC K\u00f6ln vs Elversberg",
   "kick": "2026-11-28T14:30:00+00:00",
   "league": "BUNDESLIGA",
-  "mins_to_kick": 1555,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 848.83
+  "mins_to_kick": 988,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1584.79
  },
  "KXBUNDESLIGA1HTOTAL-26NOV28M05UNI-1": {
-  "ask": 0.78,
+  "ask": 0.77,
   "bid": 0.76,
   "game": "Mainz vs Union Berlin",
   "kick": "2026-11-28T14:30:00+00:00",
   "league": "BUNDESLIGA",
-  "mins_to_kick": 1555,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 493.07
+  "mins_to_kick": 988,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1545.9
  },
  "KXBUNDESLIGA1HTOTAL-26NOV28PADSCH-1": {
-  "ask": 0.73,
+  "ask": 0.72,
   "bid": 0.71,
   "game": "Paderborn vs Schalke",
   "kick": "2026-11-28T14:30:00+00:00",
   "league": "BUNDESLIGA",
-  "mins_to_kick": 1555,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 948.1
+  "mins_to_kick": 988,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2840.23
  },
  "KXBUNDESLIGA1HTOTAL-26NOV28VFBSGE-1": {
-  "ask": 0.85,
-  "bid": 0.83,
+  "ask": 0.84,
+  "bid": 0.82,
   "game": "Stuttgart vs Frankfurt",
   "kick": "2026-11-28T17:30:00+00:00",
   "league": "BUNDESLIGA",
-  "mins_to_kick": 1735,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 478.56
+  "mins_to_kick": 1168,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 290.38
+ },
+ "KXBUNDESLIGA1HTOTAL-26NOV29BVBLEV-1": {
+  "ask": 0.8,
+  "bid": 0.77,
+  "game": "Dortmund vs Leverkusen",
+  "kick": "2026-11-29T18:30:00+00:00",
+  "league": "BUNDESLIGA",
+  "mins_to_kick": 2668,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 4459.11
+ },
+ "KXBUNDESLIGA1HTOTAL-26NOV29SCFRBL-1": {
+  "ask": 0.79,
+  "bid": 0.77,
+  "game": "Freiburg vs Leipzig",
+  "kick": "2026-11-29T14:30:00+00:00",
+  "league": "BUNDESLIGA",
+  "mins_to_kick": 2428,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 222.04
+ },
+ "KXBUNDESLIGA1HTOTAL-26NOV29TSGFCA-1": {
+  "ask": 0.84,
+  "bid": 0.81,
+  "game": "Hoffenheim vs Augsburg",
+  "kick": "2026-11-29T16:30:00+00:00",
+  "league": "BUNDESLIGA",
+  "mins_to_kick": 2548,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 5478.86
+ },
+ "KXCONMEBOLLIB1HTOTAL-26NOV28PALELP-1": {
+  "ask": 0.62,
+  "bid": 0.59,
+  "game": "Palmeiras vs Estudiantes La Plata",
+  "kick": "2026-11-28T20:00:00+00:00",
+  "league": "CONMEBOLLIB",
+  "mins_to_kick": 1318,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 206.29
  },
  "KXEFLCHAMPIONSHIP1HTOTAL-26NOV27SOUMID-1": {
   "ask": 0.76,
@@ -131,6 +201,106 @@
   "mins_to_kick": 445,
   "priced_at": "2026-11-27T12:34:51+00:00",
   "size": 1033.67
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28BCBOL-1": {
+  "ask": 0.77,
+  "bid": 0.75,
+  "game": "Birmingham vs Bolton",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1515.25
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28BLACHA-1": {
+  "ask": 0.69,
+  "bid": 0.67,
+  "game": "Blackburn vs Charlton",
+  "kick": "2026-11-28T12:30:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 868,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 266.53
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28DERWAT-1": {
+  "ask": 0.7,
+  "bid": 0.68,
+  "game": "Derby vs Watford",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2762.27
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28LICWOL-1": {
+  "ask": 0.72,
+  "bid": 0.71,
+  "game": "Lincoln vs Wolverhampton",
+  "kick": "2026-11-28T12:30:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 868,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 264.26
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28MILBUR-1": {
+  "ask": 0.74,
+  "bid": 0.72,
+  "game": "Millwall vs Burnley",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 263.33
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28PNENOR-1": {
+  "ask": 0.76,
+  "bid": 0.74,
+  "game": "Preston vs Norwich",
+  "kick": "2026-11-28T12:30:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 868,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1512.6
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28QPRSHU-1": {
+  "ask": 0.72,
+  "bid": 0.69,
+  "game": "QPR vs Sheffield United",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2757.02
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28WBABRC-1": {
+  "ask": 0.71,
+  "bid": 0.69,
+  "game": "West Bromwich vs Bristol City",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 269.72
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28WHUSTK-1": {
+  "ask": 0.74,
+  "bid": 0.7,
+  "game": "West Ham vs Stoke",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 7676.04
+ },
+ "KXEFLCHAMPIONSHIP1HTOTAL-26NOV28WREPOR-1": {
+  "ask": 0.65,
+  "bid": 0.63,
+  "game": "Wrexham vs Portsmouth",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLCHAMPIONSHIP",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2766.76
  },
  "KXEFLL11HTOTAL-26NOV26DRHUD-1": {
   "ask": 0.75,
@@ -152,6 +322,116 @@
   "result": "yes",
   "size": 1079.0
  },
+ "KXEFLL11HTOTAL-26NOV28BROBURA-1": {
+  "ask": 0.73,
+  "bid": 0.7,
+  "game": "Bromley vs Burton",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 139.38
+ },
+ "KXEFLL11HTOTAL-26NOV28LEIMAT-1": {
+  "ask": 0.8,
+  "bid": 0.76,
+  "game": "Leicester vs Mansfield",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 638.93
+ },
+ "KXEFLL11HTOTAL-26NOV28LUTOXU-1": {
+  "ask": 0.77,
+  "bid": 0.74,
+  "game": "Luton vs Oxford United",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 141.54
+ },
+ "KXEFLL11HTOTAL-26NOV28MKDNOC-1": {
+  "ask": 0.74,
+  "bid": 0.71,
+  "game": "Milton Keynes vs Notts",
+  "kick": "2026-11-28T12:30:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 868,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 133.57
+ },
+ "KXEFLL11HTOTAL-26NOV28PETCAM-1": {
+  "ask": 0.76,
+  "bid": 0.73,
+  "game": "Peterborough vs Cambridge",
+  "kick": "2026-11-28T12:30:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 868,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 131.39
+ },
+ "KXEFLL11HTOTAL-26NOV28SHWREA-1": {
+  "ask": 0.75,
+  "bid": 0.71,
+  "game": "Sheffield Wednesday vs Reading",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 131.41
+ },
+ "KXEFLL11HTOTAL-26NOV28STEBLP-1": {
+  "ask": 0.72,
+  "bid": 0.7,
+  "game": "Stevenage vs Blackpool",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 139.98
+ },
+ "KXEFLL11HTOTAL-26NOV28STOLEY-1": {
+  "ask": 0.79,
+  "bid": 0.76,
+  "game": "Stockport vs Leyton Orient",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 142.19
+ },
+ "KXEFLL11HTOTAL-26NOV28WIGPA-1": {
+  "ask": 0.75,
+  "bid": 0.72,
+  "game": "Wigan vs Plymouth",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 138.79
+ },
+ "KXEFLL11HTOTAL-26NOV28WIMBAR-1": {
+  "ask": 0.78,
+  "bid": 0.75,
+  "game": "Wimbledon vs Barnsley",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 138.38
+ },
+ "KXEFLL11HTOTAL-26NOV28WYWBRA-1": {
+  "ask": 0.72,
+  "bid": 0.69,
+  "game": "Wycombe vs Bradford",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "EFLL1",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 136.05
+ },
  "KXEPL1HTOTAL-26NOV27NFOCFC-1": {
   "ask": 0.7,
   "bid": 0.69,
@@ -163,14 +443,14 @@
   "size": 2646.61
  },
  "KXEPL1HTOTAL-26NOV28IPSAVL-1": {
-  "ask": 0.77,
+  "ask": 0.76,
   "bid": 0.75,
   "game": "Ipswich Town vs Aston Villa",
   "kick": "2026-11-28T17:30:00+00:00",
   "league": "EPL",
-  "mins_to_kick": 1735,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 1107.53
+  "mins_to_kick": 1168,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2895.38
  },
  "KXEPL1HTOTAL-26NOV28LEECOV-1": {
   "ask": 0.74,
@@ -178,9 +458,9 @@
   "game": "Leeds United vs Coventry",
   "kick": "2026-11-28T15:00:00+00:00",
   "league": "EPL",
-  "mins_to_kick": 1585,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 832.19
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1014.36
  },
  "KXEPL1HTOTAL-26NOV28MUNBRE-1": {
   "ask": 0.77,
@@ -188,9 +468,39 @@
   "game": "Manchester United vs Brentford",
   "kick": "2026-11-28T15:00:00+00:00",
   "league": "EPL",
-  "mins_to_kick": 1585,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 7778.33
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 8228.58
+ },
+ "KXEPL1HTOTAL-26NOV29ARSMCI-1": {
+  "ask": 0.73,
+  "bid": 0.71,
+  "game": "Arsenal vs Manchester City",
+  "kick": "2026-11-29T16:30:00+00:00",
+  "league": "EPL",
+  "mins_to_kick": 2548,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 818.99
+ },
+ "KXEPL1HTOTAL-26NOV29BRINEW-1": {
+  "ask": 0.77,
+  "bid": 0.76,
+  "game": "Brighton vs Newcastle",
+  "kick": "2026-11-29T14:05:00+00:00",
+  "league": "EPL",
+  "mins_to_kick": 2403,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 709.29
+ },
+ "KXEPL1HTOTAL-26NOV29CRYHUL-1": {
+  "ask": 0.73,
+  "bid": 0.71,
+  "game": "Crystal Palace vs Hull City",
+  "kick": "2026-11-29T14:05:00+00:00",
+  "league": "EPL",
+  "mins_to_kick": 2403,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 329.11
  },
  "KXEPL1HTOTAL-26NOV29EVELFC-1": {
   "ask": 0.74,
@@ -198,9 +508,29 @@
   "game": "Everton vs Liverpool",
   "kick": "2026-11-29T12:00:00+00:00",
   "league": "EPL",
-  "mins_to_kick": 2845,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 329.99
+  "mins_to_kick": 2278,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 843.32
+ },
+ "KXEPL1HTOTAL-26NOV29FULBOU-1": {
+  "ask": 0.73,
+  "bid": 0.71,
+  "game": "Fulham vs Bournemouth",
+  "kick": "2026-11-29T14:05:00+00:00",
+  "league": "EPL",
+  "mins_to_kick": 2403,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 6751.95
+ },
+ "KXEPL1HTOTAL-26NOV29SUNTOT-1": {
+  "ask": 0.69,
+  "bid": 0.68,
+  "game": "Sunderland vs Tottenham",
+  "kick": "2026-11-29T14:05:00+00:00",
+  "league": "EPL",
+  "mins_to_kick": 2403,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 841.92
  },
  "KXEREDIVISIE1HTOTAL-26NOV27GROWIL-1": {
   "ask": 0.8,
@@ -210,97 +540,128 @@
   "league": "EREDIVISIE",
   "mins_to_kick": 385,
   "priced_at": "2026-11-27T12:34:51+00:00",
+  "result": "yes",
   "size": 7039.68
+ },
+ "KXEREDIVISIE1HTOTAL-26NOV28CAMSPA-1": {
+  "ask": 0.81,
+  "bid": 0.78,
+  "game": "Cambuur vs Sparta",
+  "kick": "2026-11-28T20:00:00+00:00",
+  "league": "EREDIVISIE",
+  "mins_to_kick": 1318,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 702.34
+ },
+ "KXEREDIVISIE1HTOTAL-26NOV28EXCTEL-1": {
+  "ask": 0.74,
+  "bid": 0.72,
+  "game": "Excelsior vs Telstar",
+  "kick": "2026-11-28T15:30:00+00:00",
+  "league": "EREDIVISIE",
+  "mins_to_kick": 1048,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 197.4
+ },
+ "KXEREDIVISIE1HTOTAL-26NOV28PSVGAE-1": {
+  "ask": 0.87,
+  "bid": 0.85,
+  "game": "Eindhoven vs GA Eagles",
+  "kick": "2026-11-28T17:45:00+00:00",
+  "league": "EREDIVISIE",
+  "mins_to_kick": 1183,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1250.18
  },
  "KXJLEAGUE1HTOTAL-26NOV28KASFAG-1": {
   "ask": 0.71,
-  "bid": 0.68,
+  "bid": 0.69,
   "game": "Kashima vs Fagiano O",
   "kick": "2026-11-28T06:00:00+00:00",
   "league": "JLEAGUE",
-  "mins_to_kick": 1045,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 195.04
+  "mins_to_kick": 478,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1792.74
  },
  "KXJLEAGUE1HTOTAL-26NOV28KYOCER-1": {
-  "ask": 0.74,
-  "bid": 0.71,
+  "ask": 0.73,
+  "bid": 0.72,
   "game": "Kyoto Sanga vs Cerezo",
   "kick": "2026-11-28T05:00:00+00:00",
   "league": "JLEAGUE",
-  "mins_to_kick": 985,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 194.16
+  "mins_to_kick": 418,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 204.29
  },
  "KXJLEAGUE1HTOTAL-26NOV28REYSAN-1": {
   "ask": 0.75,
-  "bid": 0.72,
+  "bid": 0.73,
   "game": "Kashiwa vs Hiroshima",
   "kick": "2026-11-28T07:00:00+00:00",
   "league": "JLEAGUE",
-  "mins_to_kick": 1105,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 195.93
+  "mins_to_kick": 538,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 8761.65
  },
  "KXJLEAGUE1HTOTAL-26NOV28SHIURD-1": {
-  "ask": 0.7,
+  "ask": 0.69,
   "bid": 0.67,
   "game": "Shimizu vs Urawa",
   "kick": "2026-11-28T05:00:00+00:00",
   "league": "JLEAGUE",
-  "mins_to_kick": 985,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 191.47
+  "mins_to_kick": 418,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1816.19
  },
  "KXJLEAGUE1HTOTAL-26NOV28VIKJEF-1": {
   "ask": 0.72,
-  "bid": 0.7,
+  "bid": 0.71,
   "game": "Kobe vs United Chiba",
   "kick": "2026-11-28T06:00:00+00:00",
   "league": "JLEAGUE",
-  "mins_to_kick": 1045,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 1199.65
+  "mins_to_kick": 478,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1208.41
  },
  "KXKLEAGUE1HTOTAL-26NOV28ANYJEJ-1": {
   "ask": 0.72,
-  "bid": 0.69,
+  "bid": 0.7,
   "game": "FC Anyang vs Jeju SK",
   "kick": "2026-11-28T05:00:00+00:00",
   "league": "KLEAGUE",
-  "mins_to_kick": 985,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 197.19
+  "mins_to_kick": 418,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1201.32
  },
  "KXKLEAGUE1HTOTAL-26NOV28BUCGIS-1": {
-  "ask": 0.72,
-  "bid": 0.69,
+  "ask": 0.71,
+  "bid": 0.7,
   "game": "Bucheon vs Gimcheon Sangmu",
   "kick": "2026-11-28T07:30:00+00:00",
   "league": "KLEAGUE",
-  "mins_to_kick": 1135,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 201.99
+  "mins_to_kick": 568,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 208.66
  },
  "KXKLEAGUE1HTOTAL-26NOV28POHGWA-1": {
   "ask": 0.7,
-  "bid": 0.67,
+  "bid": 0.68,
   "game": "Pohang Steelers vs Gwangju",
   "kick": "2026-11-28T07:30:00+00:00",
   "league": "KLEAGUE",
-  "mins_to_kick": 1135,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 202.03
+  "mins_to_kick": 568,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 689.7
  },
  "KXKLEAGUE1HTOTAL-26NOV28SEODAJ-1": {
-  "ask": 0.75,
-  "bid": 0.72,
+  "ask": 0.74,
+  "bid": 0.73,
   "game": "Seoul vs Daejeon Citizen",
   "kick": "2026-11-28T05:00:00+00:00",
   "league": "KLEAGUE",
-  "mins_to_kick": 985,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 205.93
+  "mins_to_kick": 418,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 202.26
  },
  "KXLALIGA1HTOTAL-26NOV27LEVSAN-1": {
   "ask": 0.8,
@@ -313,24 +674,24 @@
   "size": 4082.9
  },
  "KXLALIGA1HTOTAL-26NOV28ELCATM-1": {
-  "ask": 0.77,
-  "bid": 0.75,
+  "ask": 0.76,
+  "bid": 0.74,
   "game": "Elche vs Atletico",
   "kick": "2026-11-28T17:30:00+00:00",
   "league": "LALIGA",
-  "mins_to_kick": 1735,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 1312.21
+  "mins_to_kick": 1168,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 818.4
  },
  "KXLALIGA1HTOTAL-26NOV28MCFATH-1": {
-  "ask": 0.73,
+  "ask": 0.71,
   "bid": 0.7,
   "game": "Malaga vs Bilbao",
   "kick": "2026-11-28T15:15:00+00:00",
   "league": "LALIGA",
-  "mins_to_kick": 1600,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 7255.23
+  "mins_to_kick": 1033,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2988.85
  },
  "KXLALIGA1HTOTAL-26NOV28RBBRVC-1": {
   "ask": 0.77,
@@ -338,19 +699,59 @@
   "game": "Real Betis vs Vallecano",
   "kick": "2026-11-28T13:00:00+00:00",
   "league": "LALIGA",
-  "mins_to_kick": 1465,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 306.65
+  "mins_to_kick": 898,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 8964.27
  },
  "KXLALIGA1HTOTAL-26NOV28RMAALA-1": {
-  "ask": 0.84,
-  "bid": 0.81,
+  "ask": 0.83,
+  "bid": 0.82,
   "game": "Real Madrid vs Alaves",
   "kick": "2026-11-28T20:00:00+00:00",
   "league": "LALIGA",
-  "mins_to_kick": 1885,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 6378.59
+  "mins_to_kick": 1318,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1752.71
+ },
+ "KXLALIGA1HTOTAL-26NOV29DEPBAR-1": {
+  "ask": 0.86,
+  "bid": 0.83,
+  "game": "Deportivo De La Coruna vs Barcelona",
+  "kick": "2026-11-29T15:15:00+00:00",
+  "league": "LALIGA",
+  "mins_to_kick": 2473,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 7077.36
+ },
+ "KXLALIGA1HTOTAL-26NOV29RCCVIL-1": {
+  "ask": 0.74,
+  "bid": 0.72,
+  "game": "Celta Vigo vs Villarreal",
+  "kick": "2026-11-29T17:30:00+00:00",
+  "league": "LALIGA",
+  "mins_to_kick": 2608,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 496.25
+ },
+ "KXLALIGA1HTOTAL-26NOV29RSOSEV-1": {
+  "ask": 0.74,
+  "bid": 0.7,
+  "game": "Real Sociedad vs Sevilla",
+  "kick": "2026-11-29T20:00:00+00:00",
+  "league": "LALIGA",
+  "mins_to_kick": 2758,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1242.26
+ },
+ "KXLALIGA1HTOTAL-26NOV29VCFOSA-1": {
+  "ask": 0.66,
+  "bid": 0.64,
+  "game": "Valencia vs Osasuna",
+  "kick": "2026-11-29T13:00:00+00:00",
+  "league": "LALIGA",
+  "mins_to_kick": 2338,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 317.3
  },
  "KXLIGAMX1HTOTAL-26NOV25MONAME-1": {
   "ask": 0.7,
@@ -402,19 +803,19 @@
   "game": "America vs Monterrey",
   "kick": "2026-11-29T03:10:00+00:00",
   "league": "LIGAMX",
-  "mins_to_kick": 2315,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 271.19
+  "mins_to_kick": 1748,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 299.69
  },
  "KXLIGAMX1HTOTAL-26NOV28ATLTOL-1": {
-  "ask": 0.79,
-  "bid": 0.76,
+  "ask": 0.8,
+  "bid": 0.75,
   "game": "Atlas vs Toluca",
   "kick": "2026-11-29T01:00:00+00:00",
   "league": "LIGAMX",
-  "mins_to_kick": 2185,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 189.39
+  "mins_to_kick": 1618,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 215.46
  },
  "KXLIGAPORTUGAL1HTOTAL-26NOV27CSMCDN-1": {
   "ask": 0.66,
@@ -425,6 +826,46 @@
   "mins_to_kick": 460,
   "priced_at": "2026-11-27T12:34:51+00:00",
   "size": 2072.86
+ },
+ "KXLIGAPORTUGAL1HTOTAL-26NOV28ACVALV-1": {
+  "ask": 0.69,
+  "bid": 0.67,
+  "game": "Viseu vs Alverca",
+  "kick": "2026-11-28T18:00:00+00:00",
+  "league": "LIGAPORTUGAL",
+  "mins_to_kick": 1198,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 192.04
+ },
+ "KXLIGAPORTUGAL1HTOTAL-26NOV28ARORAV-1": {
+  "ask": 0.7,
+  "bid": 0.68,
+  "game": "Arouca vs Rio Ave",
+  "kick": "2026-11-28T15:30:00+00:00",
+  "league": "LIGAPORTUGAL",
+  "mins_to_kick": 1048,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 196.1
+ },
+ "KXLIGAPORTUGAL1HTOTAL-26NOV28MORSCL-1": {
+  "ask": 0.64,
+  "bid": 0.62,
+  "game": "Moreirense vs Santa Clara Azores",
+  "kick": "2026-11-28T15:30:00+00:00",
+  "league": "LIGAPORTUGAL",
+  "mins_to_kick": 1048,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 191.53
+ },
+ "KXLIGAPORTUGAL1HTOTAL-26NOV28VITESA-1": {
+  "ask": 0.74,
+  "bid": 0.68,
+  "game": "Guimaraes vs Estrela Amadora",
+  "kick": "2026-11-28T20:30:00+00:00",
+  "league": "LIGAPORTUGAL",
+  "mins_to_kick": 1348,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 193.44
  },
  "KXLIGUE11HTOTAL-26NOV27STBPAR-1": {
   "ask": 0.7,
@@ -442,39 +883,39 @@
   "game": "Angers vs Lens",
   "kick": "2026-11-28T16:15:00+00:00",
   "league": "LIGUE1",
-  "mins_to_kick": 1660,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 225.39
+  "mins_to_kick": 1093,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 284.08
  },
  "KXLIGUE11HTOTAL-26NOV28HACRCS-1": {
-  "ask": 0.75,
+  "ask": 0.74,
   "bid": 0.71,
   "game": "Le Havre vs Strasbourg Alsace",
   "kick": "2026-11-28T19:45:00+00:00",
   "league": "LIGUE1",
-  "mins_to_kick": 1870,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 717.64
+  "mins_to_kick": 1303,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1989.21
  },
  "KXLIGUE11HTOTAL-26NOV28MANLIL-1": {
   "ask": 0.68,
-  "bid": 0.66,
+  "bid": 0.65,
   "game": "Le Mans vs Lille",
   "kick": "2026-11-28T19:45:00+00:00",
   "league": "LIGUE1",
-  "mins_to_kick": 1870,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 219.49
+  "mins_to_kick": 1303,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 3326.72
  },
  "KXLIGUE11HTOTAL-26NOV28NICEST-1": {
-  "ask": 0.74,
-  "bid": 0.72,
+  "ask": 0.73,
+  "bid": 0.71,
   "game": "Nice vs Troyes",
   "kick": "2026-11-28T19:45:00+00:00",
   "league": "LIGUE1",
-  "mins_to_kick": 1870,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 232.01
+  "mins_to_kick": 1303,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 242.71
  },
  "KXLIGUE11HTOTAL-26NOV28PSGFCL-1": {
   "ask": 0.8,
@@ -482,49 +923,79 @@
   "game": "PSG vs Lorient",
   "kick": "2026-11-28T19:45:00+00:00",
   "league": "LIGUE1",
-  "mins_to_kick": 1870,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 237.53
+  "mins_to_kick": 1303,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 737.28
+ },
+ "KXLIGUE11HTOTAL-26NOV29AUXOLM-1": {
+  "ask": 0.75,
+  "bid": 0.73,
+  "game": "Auxerre vs Marseille",
+  "kick": "2026-11-29T14:00:00+00:00",
+  "league": "LIGUE1",
+  "mins_to_kick": 2398,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 224.36
+ },
+ "KXLIGUE11HTOTAL-26NOV29OLASM-1": {
+  "ask": 0.71,
+  "bid": 0.67,
+  "game": "Lyon vs Monaco",
+  "kick": "2026-11-29T19:45:00+00:00",
+  "league": "LIGUE1",
+  "mins_to_kick": 2743,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 312.99
+ },
+ "KXLIGUE11HTOTAL-26NOV29TFCREN-1": {
+  "ask": 0.75,
+  "bid": 0.72,
+  "game": "Toulouse vs Stade Rennais",
+  "kick": "2026-11-29T16:15:00+00:00",
+  "league": "LIGUE1",
+  "mins_to_kick": 2533,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 201.22
  },
  "KXMLS1HTOTAL-26NOV27CLBMIA-1": {
   "ask": 0.8,
-  "bid": 0.78,
+  "bid": 0.79,
   "game": "Columbus vs Miami",
   "kick": "2026-11-28T01:00:00+00:00",
   "league": "MLS",
-  "mins_to_kick": 745,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 1992.52
+  "mins_to_kick": 178,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 379.61
  },
  "KXMLS1HTOTAL-26NOV27RSLVAN-1": {
-  "ask": 0.77,
-  "bid": 0.75,
+  "ask": 0.76,
+  "bid": 0.74,
   "game": "Salt Lake vs Vancouver",
   "kick": "2026-11-28T03:00:00+00:00",
   "league": "MLS",
-  "mins_to_kick": 865,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 1788.85
+  "mins_to_kick": 298,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 7706.04
  },
  "KXMLS1HTOTAL-26NOV28CINNSH-1": {
-  "ask": 0.8,
+  "ask": 0.79,
   "bid": 0.77,
   "game": "Cincinnati vs Nashville",
   "kick": "2026-11-28T23:30:00+00:00",
   "league": "MLS",
-  "mins_to_kick": 2095,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 565.58
+  "mins_to_kick": 1528,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 227.38
  },
  "KXMLS1HTOTAL-26NOV28CLTCHI-1": {
-  "ask": 0.82,
+  "ask": 0.81,
   "bid": 0.8,
   "game": "Charlotte vs Chicago Fire",
   "kick": "2026-11-28T17:30:00+00:00",
   "league": "MLS",
-  "mins_to_kick": 1735,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 365.19
+  "mins_to_kick": 1168,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 283.64
  },
  "KXMLS1HTOTAL-26NOV28HOUSJ-1": {
   "ask": 0.76,
@@ -532,19 +1003,19 @@
   "game": "Houston vs San Jose",
   "kick": "2026-11-28T19:30:00+00:00",
   "league": "MLS",
-  "mins_to_kick": 1855,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 325.51
+  "mins_to_kick": 1288,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2090.16
  },
  "KXMLS1HTOTAL-26NOV28LAFCSTL-1": {
   "ask": 0.79,
-  "bid": 0.77,
+  "bid": 0.76,
   "game": "Los Angeles F vs Saint Louis",
   "kick": "2026-11-29T01:30:00+00:00",
   "league": "MLS",
-  "mins_to_kick": 2215,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 325.59
+  "mins_to_kick": 1648,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 361.29
  },
  "KXMLS1HTOTAL-26NOV28PHINE-1": {
   "ask": 0.8,
@@ -552,19 +1023,19 @@
   "game": "Philadelphia vs New England",
   "kick": "2026-11-28T21:30:00+00:00",
   "league": "MLS",
-  "mins_to_kick": 1975,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 328.68
+  "mins_to_kick": 1408,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2098.19
  },
  "KXMLS1HTOTAL-26NOV28PORDAL-1": {
-  "ask": 0.81,
+  "ask": 0.8,
   "bid": 0.79,
   "game": "Portland vs Dallas",
   "kick": "2026-11-29T03:30:00+00:00",
   "league": "MLS",
-  "mins_to_kick": 2335,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 322.64
+  "mins_to_kick": 1768,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 222.47
  },
  "KXSAUDIPL1HTOTAL-26NOV26FAIDIR-1": {
   "ask": 0.75,
@@ -598,7 +1069,88 @@
   "league": "SAUDIPL",
   "mins_to_kick": 105,
   "priced_at": "2026-11-27T12:34:51+00:00",
+  "result": "no",
   "size": 4356.23
+ },
+ "KXSAUDIPL1HTOTAL-26NOV28AASALT-1": {
+  "ask": 0.79,
+  "bid": 0.76,
+  "game": "Al Ahli Saudi vs Al-Taawoun",
+  "kick": "2026-11-28T17:30:00+00:00",
+  "league": "SAUDIPL",
+  "mins_to_kick": 1168,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 914.04
+ },
+ "KXSAUDIPL1HTOTAL-26NOV28HAZALN-1": {
+  "ask": 0.83,
+  "bid": 0.8,
+  "game": "Al-Hazm vs Al Nassr",
+  "kick": "2026-11-28T12:15:00+00:00",
+  "league": "SAUDIPL",
+  "mins_to_kick": 853,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 782.29
+ },
+ "KXSAUDIPL1HTOTAL-26NOV28ITTHIL-1": {
+  "ask": 0.82,
+  "bid": 0.8,
+  "game": "Al-Ittifaq vs Al Hilal",
+  "kick": "2026-11-28T14:20:00+00:00",
+  "league": "SAUDIPL",
+  "mins_to_kick": 978,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 780.99
+ },
+ "KXSCOTTISHPREM1HTOTAL-26NOV28ABEDUN-1": {
+  "ask": 0.76,
+  "bid": 0.71,
+  "game": "Aberdeen vs Dundee FC",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "SCOTTISHPREM",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 162.11
+ },
+ "KXSCOTTISHPREM1HTOTAL-26NOV28DUUJOH-1": {
+  "ask": 0.79,
+  "bid": 0.74,
+  "game": "Dundee United vs St. Johnstone",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "SCOTTISHPREM",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 158.57
+ },
+ "KXSCOTTISHPREM1HTOTAL-26NOV28MIRKIL-1": {
+  "ask": 0.76,
+  "bid": 0.71,
+  "game": "St. Mirren vs Kilmarnock",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "SCOTTISHPREM",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 154.85
+ },
+ "KXSCOTTISHPREM1HTOTAL-26NOV28MOTHIB-1": {
+  "ask": 0.75,
+  "bid": 0.71,
+  "game": "Motherwell vs Hibernian",
+  "kick": "2026-11-28T17:45:00+00:00",
+  "league": "SCOTTISHPREM",
+  "mins_to_kick": 1183,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 153.19
+ },
+ "KXSCOTTISHPREM1HTOTAL-26NOV28RFCFAL-1": {
+  "ask": 0.83,
+  "bid": 0.78,
+  "game": "Rangers vs Falkirk",
+  "kick": "2026-11-28T15:00:00+00:00",
+  "league": "SCOTTISHPREM",
+  "mins_to_kick": 1018,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 277.51
  },
  "KXSERIEA1HTOTAL-26NOV27VENBFC-1": {
   "ask": 0.68,
@@ -616,19 +1168,19 @@
   "game": "Frosinone vs Parma Calcio",
   "kick": "2026-11-28T14:00:00+00:00",
   "league": "SERIEA",
-  "mins_to_kick": 1525,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 301.24
+  "mins_to_kick": 958,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 2227.48
  },
  "KXSERIEA1HTOTAL-26NOV28INTGEN-1": {
-  "ask": 0.78,
+  "ask": 0.77,
   "bid": 0.76,
   "game": "Inter vs Genoa",
   "kick": "2026-11-28T19:45:00+00:00",
   "league": "SERIEA",
-  "mins_to_kick": 1870,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 997.96
+  "mins_to_kick": 1303,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 335.21
  },
  "KXSERIEA1HTOTAL-26NOV28TORLAZ-1": {
   "ask": 0.71,
@@ -636,19 +1188,49 @@
   "game": "Torino vs Lazio",
   "kick": "2026-11-28T17:00:00+00:00",
   "league": "SERIEA",
-  "mins_to_kick": 1705,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 270.74
+  "mins_to_kick": 1138,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 3398.29
+ },
+ "KXSERIEA1HTOTAL-26NOV29COMJUV-1": {
+  "ask": 0.71,
+  "bid": 0.69,
+  "game": "Como vs Juventus",
+  "kick": "2026-11-29T19:45:00+00:00",
+  "league": "SERIEA",
+  "mins_to_kick": 2743,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 245.59
+ },
+ "KXSERIEA1HTOTAL-26NOV29ROMMON-1": {
+  "ask": 0.83,
+  "bid": 0.81,
+  "game": "Roma vs Monza",
+  "kick": "2026-11-29T17:00:00+00:00",
+  "league": "SERIEA",
+  "mins_to_kick": 2578,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 1006.06
+ },
+ "KXSERIEA1HTOTAL-26NOV29SASNAP-1": {
+  "ask": 0.77,
+  "bid": 0.75,
+  "game": "Sassuolo vs Napoli",
+  "kick": "2026-11-29T14:00:00+00:00",
+  "league": "SERIEA",
+  "mins_to_kick": 2398,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 8045.44
  },
  "KXSERIEA1HTOTAL-26NOV29UDIFIO-1": {
-  "ask": 0.76,
-  "bid": 0.69,
+  "ask": 0.74,
+  "bid": 0.72,
   "game": "Udinese vs Fiorentina",
   "kick": "2026-11-29T11:30:00+00:00",
   "league": "SERIEA",
-  "mins_to_kick": 2815,
-  "priced_at": "2026-11-27T12:34:51+00:00",
-  "size": 500.0
+  "mins_to_kick": 2248,
+  "priced_at": "2026-11-27T22:02:19+00:00",
+  "size": 300.95
  },
  "KXUECL1HTOTAL-26NOV26AJATHU-1": {
   "ask": 0.86,
